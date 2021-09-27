@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :style="cssVars">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -8,13 +8,33 @@
   </div>
 </template>
 
+<script lang="ts">
+import { background, text, accent } from "./constants/colors";
+
+export default {
+  computed: {
+    cssVars(): Record<string, unknown> {
+      return {
+        "--background": background,
+        "--text": text,
+        "--accent": accent,
+      };
+    },
+  },
+};
+</script>
+
 <style>
+@import "styles/reset.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--text);
+  background: var(--background);
+  height: 100%;
 }
 
 #nav {
@@ -23,10 +43,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: var(--text);
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: var(--accent);
 }
 </style>
