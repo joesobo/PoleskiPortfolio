@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-card>
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
@@ -78,7 +78,7 @@
         </v-row>
       </v-col>
     </v-row>
-  </v-container>
+  </v-card>
 </template>
 
 <script lang="ts">
@@ -87,6 +87,11 @@ import Vue from "vue";
 export default Vue.extend({
   name: "HelloWorld",
 
+  computed: {
+    theme() {
+      return this.$vuetify.theme.dark ? "dark" : "light";
+    },
+  },
   data: () => ({
     ecosystem: [
       {

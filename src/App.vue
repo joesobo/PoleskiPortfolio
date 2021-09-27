@@ -51,3 +51,14 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style>
+.theme--dark.v-application {
+  color: #C9D1D9 !important;
+}
+
+.v-application a {
+  color: #C9D1D9 !important;
+  text-decoration: none;
+}
+</style>
