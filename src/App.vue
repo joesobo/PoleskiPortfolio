@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { background, text, accent } from "./constants/colors";
+import { background, text, accent, primary } from "./constants/colors";
 
 export default {
   computed: {
@@ -18,6 +18,7 @@ export default {
         "--background": background,
         "--text": text,
         "--accent": accent,
+        "--primary": primary,
       };
     },
   },
@@ -39,6 +40,7 @@ export default {
 
 #nav {
   padding: 30px;
+  background: var(--primary);
 }
 
 #nav a {
