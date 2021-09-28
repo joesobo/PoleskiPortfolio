@@ -3,10 +3,15 @@
     <div class="row center max rightalign">
       <div class="empty" />
       <div class="options">
-        <a class="selected" href="">Option 1</a>
-        <a href="">Option 2</a>
-        <a href="">Option 3</a>
-        <a href="">Option 4</a>
+        <a class="selected" href="">
+          <fa class="icon selectedicon" :icon="['fas', 'book-open']" />
+          Option 1
+        </a>
+        <a href=""><fa class="icon" :icon="['fas', 'book']" />Option 2</a>
+        <a href=""
+          ><fa class="icon" :icon="['fas', 'project-diagram']" />Option 3</a
+        >
+        <a href=""><fa class="icon" :icon="['fas', 'cube']" />Option 4</a>
       </div>
     </div>
   </div>
@@ -23,6 +28,17 @@ export default {};
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: flex-end;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 8px;
+  color: var(--subtext);
+}
+
+.selectedicon {
+  color: var(--text);
 }
 
 .rightalign {

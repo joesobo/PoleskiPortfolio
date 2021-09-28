@@ -6,7 +6,14 @@
 </template>
 
 <script lang="ts">
-import { background, text, accent, primary, border } from "./constants/colors";
+import {
+  background,
+  text,
+  accent,
+  primary,
+  border,
+  subtext,
+} from "./constants/colors";
 import Nav from "./components/Nav.vue";
 
 export default {
@@ -18,6 +25,7 @@ export default {
       return {
         "--background": background,
         "--text": text,
+        "--subtext": subtext,
         "--accent": accent,
         "--primary": primary,
         "--border": border,

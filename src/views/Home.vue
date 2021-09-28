@@ -10,7 +10,9 @@
       </div>
       <!-- 4 -->
       <div class="col right">
-        <div class="borderContainer">Hello world</div>
+        <div class="borderContainer">
+          <MainContent />
+        </div>
       </div>
     </div>
   </div>
@@ -19,11 +21,13 @@
 <script lang="ts">
 import Vue from "vue";
 import TitleRow from "@/components/TitleRow.vue";
+import MainContent from "@/components/MainContent.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     TitleRow,
+    MainContent,
   },
 });
 </script>
@@ -42,7 +46,8 @@ export default Vue.extend({
 
 .left {
   width: 25%;
-  padding: 24px;
+  padding: 0px 24px;
+  margin-top: -32px;
 }
 
 img {
