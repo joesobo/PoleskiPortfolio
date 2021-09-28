@@ -1,11 +1,8 @@
 <template>
   <nav>
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      <span>{{ `&nbsp;|&nbsp;` }}</span>
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <router-link to="/">Home</router-link>
+    <span>{{ `&nbsp;|&nbsp;` }}</span>
+    <router-link to="/about">About</router-link>
   </nav>
 </template>
 
@@ -16,7 +13,7 @@ export default Vue.extend({});
 </script>
 
 <style scoped>
-#nav {
+nav {
   height: 30px;
   padding: 16px;
   background: var(--primary);
@@ -25,12 +22,12 @@ export default Vue.extend({});
   align-items: center;
 }
 
-#nav a {
+nav a {
   font-weight: bold;
   color: var(--text);
 }
 
-#nav a.router-link-exact-active {
+nav a.router-link-exact-active {
   color: var(--accent);
 }
 </style>

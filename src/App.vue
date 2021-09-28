@@ -1,11 +1,12 @@
 <template>
   <div id="app" :style="cssVars">
     <Nav />
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
-import { background, text, accent, primary } from "./constants/colors";
+import { background, text, accent, primary, border } from "./constants/colors";
 import Nav from "./components/Nav.vue";
 
 export default {
@@ -19,6 +20,7 @@ export default {
         "--text": text,
         "--accent": accent,
         "--primary": primary,
+        "--border": border,
       };
     },
   },
@@ -36,5 +38,33 @@ export default {
   color: var(--text);
   background: var(--background);
   height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.expand {
+  height: 100%;
+}
+
+.center {
+  justify-content: center;
+}
+
+.max {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--text);
 }
 </style>
