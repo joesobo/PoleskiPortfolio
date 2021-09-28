@@ -1,17 +1,17 @@
 <template>
   <div id="app" :style="cssVars">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Nav />
   </div>
 </template>
 
 <script lang="ts">
 import { background, text, accent, primary } from "./constants/colors";
+import Nav from "./components/Nav.vue";
 
 export default {
+  components: {
+    Nav,
+  },
   computed: {
     cssVars(): Record<string, unknown> {
       return {
@@ -36,19 +36,5 @@ export default {
   color: var(--text);
   background: var(--background);
   height: 100%;
-}
-
-#nav {
-  padding: 30px;
-  background: var(--primary);
-}
-
-#nav a {
-  font-weight: bold;
-  color: var(--text);
-}
-
-#nav a.router-link-exact-active {
-  color: var(--accent);
 }
 </style>
