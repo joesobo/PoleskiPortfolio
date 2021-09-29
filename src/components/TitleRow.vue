@@ -5,13 +5,13 @@
       <div class="options">
         <a class="selected" href="">
           <fa class="icon selectedicon" :icon="['fas', 'book-open']" />
-          Option 1
+          About Me
         </a>
-        <a href=""><fa class="icon" :icon="['fas', 'book']" />Option 2</a>
+        <a href=""><fa class="icon" :icon="['fas', 'book']" />Notes</a>
         <a href=""
-          ><fa class="icon" :icon="['fas', 'project-diagram']" />Option 3</a
+          ><fa class="icon" :icon="['fas', 'project-diagram']" />Projects</a
         >
-        <a href=""><fa class="icon" :icon="['fas', 'cube']" />Option 4</a>
+        <a href=""><fa class="icon" :icon="['fas', 'cube']" />Contact</a>
       </div>
     </div>
   </div>

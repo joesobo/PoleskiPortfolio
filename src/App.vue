@@ -13,6 +13,8 @@ import {
   primary,
   border,
   subtext,
+  muted,
+  bordermuted
 } from "./constants/colors";
 import Nav from "./components/Nav.vue";
 
@@ -29,6 +31,8 @@ export default {
         "--accent": accent,
         "--primary": primary,
         "--border": border,
+        "--muted": muted,
+        "--bordermuted": bordermuted,
       };
     },
   },
@@ -37,9 +41,14 @@ export default {
 
 <style>
 @import "styles/reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body,
+html {
+  font-family: "Open Sans";
+}
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

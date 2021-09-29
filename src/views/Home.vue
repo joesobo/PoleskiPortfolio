@@ -6,7 +6,7 @@
     <div class="center row expand max">
       <!-- 1 -->
       <div class="col left">
-        <img src="https://avatars.githubusercontent.com/u/26047842?v=4" />
+        <Sidebar />
       </div>
       <!-- 4 -->
       <div class="col right">
@@ -22,21 +22,19 @@
 import Vue from "vue";
 import TitleRow from "@/components/TitleRow.vue";
 import MainContent from "@/components/MainContent.vue";
+import Sidebar from "@/components/Sidebar.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
     TitleRow,
     MainContent,
+    Sidebar,
   },
 });
 </script>
 
 <style scoped>
-.home {
-  height: 100%;
-}
-
 .borderContainer {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -48,11 +46,6 @@ export default Vue.extend({
   width: 25%;
   padding: 0px 24px;
   margin-top: -32px;
-}
-
-img {
-  width: 100%;
-  border-radius: 50%;
 }
 
 .right {

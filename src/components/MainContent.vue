@@ -96,6 +96,6 @@ export default {};
 <style scoped>
 .headerimage {
   max-width: 100%;
-  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+  /* -webkit-mask-image: linear-gradient(to bottom, white, transparent); */
 }
 </style>
