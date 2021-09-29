@@ -48,6 +48,10 @@ h1 {
   padding-top: 16px;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 h3 {
   font-size: 18px;
   font-weight: thin;
