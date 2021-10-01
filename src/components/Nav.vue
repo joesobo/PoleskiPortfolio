@@ -2,15 +2,22 @@
   <nav>
     <fa class="logo" :icon="['fas', 'monument']" />
     <div class="options">
-      <a class="selected" href="">
+      <router-link class="selected" to="/notes">
         <fa class="icon selectedicon" :icon="['fas', 'book-open']" />
         About Me
-      </a>
-      <a href=""><fa class="icon" :icon="['fas', 'book']" />Notes</a>
-      <a href=""
-        ><fa class="icon" :icon="['fas', 'project-diagram']" />Projects</a
+      </router-link>
+      <router-link to="/notes">
+        <fa class="icon" :icon="['fas', 'book']" />Notes
+      </router-link>
+      <router-link to="/projects">
+        <fa
+          class="icon"
+          :icon="['fas', 'project-diagram']"
+        />Projects</router-link
       >
-      <a href=""><fa class="icon" :icon="['fas', 'cube']" />Contact</a>
+      <router-link to="/contact"
+        ><fa class="icon" :icon="['fas', 'cube']" />Contact</router-link
+      >
     </div>
   </nav>
 </template>
@@ -35,7 +42,7 @@ nav a {
   color: var(--text);
 }
 
-nav a.router-link-exact-active {
+nav router-link-exact-active {
   color: var(--accent);
 }
 
