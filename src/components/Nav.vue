@@ -1,23 +1,43 @@
 <template>
   <nav>
-    <fa class="logo" :icon="['fas', 'monument']" />
+    <div class="link" @click="setSelected('home')" to="/">
+      <fa class="logo" :icon="['fas', 'monument']" />
+    </div>
     <div class="options">
-      <router-link class="selected" to="/notes">
+      <div
+        @click="setSelected('home')"
+        :class="isSelected('home')"
+        class="link"
+        to="/"
+      >
         <fa class="icon selectedicon" :icon="['fas', 'book-open']" />
         About Me
-      </router-link>
-      <router-link to="/notes">
+      </div>
+      <div
+        @click="setSelected('notes')"
+        :class="isSelected('notes')"
+        class="link"
+        to="/notes"
+        @click.native="this.selected = 'notes'"
+      >
         <fa class="icon" :icon="['fas', 'book']" />Notes
-      </router-link>
-      <router-link to="/projects">
-        <fa
-          class="icon"
-          :icon="['fas', 'project-diagram']"
-        />Projects</router-link
+      </div>
+      <div
+        @click="setSelected('projects')"
+        :class="isSelected('projects')"
+        class="link"
+        to="/projects"
       >
-      <router-link to="/contact"
-        ><fa class="icon" :icon="['fas', 'cube']" />Contact</router-link
+        <fa class="icon" :icon="['fas', 'project-diagram']" />Projects
+      </div>
+      <div
+        @click="setSelected('contact')"
+        :class="isSelected('contact')"
+        class="link"
+        to="/contact"
       >
+        <fa class="icon" :icon="['fas', 'cube']" />Contact
+      </div>
     </div>
   </nav>
 </template>
@@ -25,7 +45,28 @@
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+  data() {
+    return {
+      selected: "home",
+    };
+  },
+  methods: {
+    setSelected(selected: string) {
+      this.selected = selected;
+      if (selected === "home") {
+        this.$router.push("/");
+      } else {
+        this.$router.push(`/${selected}`);
+      }
+    },
+    isSelected(page: string) {
+      if (this.selected === page) {
+        return "selected";
+      }
+    },
+  },
+});
 </script>
 
 <style scoped>
@@ -37,13 +78,9 @@ nav {
   align-items: center;
 }
 
-nav a {
+nav div {
   font-weight: bold;
   color: var(--text);
-}
-
-nav router-link-exact-active {
-  color: var(--accent);
 }
 
 .options {
@@ -51,12 +88,13 @@ nav router-link-exact-active {
   justify-content: flex-start;
 }
 
-a {
+.link {
   padding: 16px 16px;
   font-size: 14px;
   line-height: 30px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .icon {
