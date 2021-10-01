@@ -84,4 +84,14 @@ html {
 a {
   color: var(--text);
 }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 </style>
