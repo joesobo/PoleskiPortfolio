@@ -34,7 +34,6 @@
         :class="isSelected('notes')"
         class="link"
         to="/notes"
-        @click.native="this.selected = 'notes'"
       >
         <fa
           class="icon"
