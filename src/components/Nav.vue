@@ -10,7 +10,11 @@
         class="link"
         to="/"
       >
-        <fa class="icon selectedicon" :icon="['fas', 'book-open']" />
+        <fa
+          class="icon"
+          :class="isSelectedIcon('home')"
+          :icon="['fas', 'book-open']"
+        />
         About Me
       </div>
       <div
@@ -19,7 +23,11 @@
         class="link"
         to="/projects"
       >
-        <fa class="icon" :icon="['fas', 'project-diagram']" />Projects
+        <fa
+          class="icon"
+          :class="isSelectedIcon('projects')"
+          :icon="['fas', 'project-diagram']"
+        />Projects
       </div>
       <div
         @click="setSelected('notes')"
@@ -28,7 +36,11 @@
         to="/notes"
         @click.native="this.selected = 'notes'"
       >
-        <fa class="icon" :icon="['fas', 'book']" />Notes
+        <fa
+          class="icon"
+          :class="isSelectedIcon('notes')"
+          :icon="['fas', 'book']"
+        />Notes
       </div>
       <div
         @click="setSelected('contact')"
@@ -36,7 +48,11 @@
         class="link"
         to="/contact"
       >
-        <fa class="icon" :icon="['fas', 'id-card']" />Contact
+        <fa
+          class="icon"
+          :class="isSelectedIcon('contact')"
+          :icon="['fas', 'id-card']"
+        />Contact
       </div>
     </div>
   </nav>
@@ -63,6 +79,11 @@ export default Vue.extend({
     isSelected(page: string) {
       if (this.selected === page) {
         return "selected";
+      }
+    },
+    isSelectedIcon(page: string) {
+      if (this.selected === page) {
+        return "selectedicon";
       }
     },
   },

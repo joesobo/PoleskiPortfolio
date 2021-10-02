@@ -4,7 +4,7 @@
     <!-- Title Row -->
     <TitleRow />
     <!--Split Col  -->
-    <div class="center row expand max">
+    <div class="center row max">
       <!-- 1 -->
       <div class="col left">
         <Sidebar />
