@@ -1,7 +1,21 @@
 <template>
   <div id="app" :style="cssVars">
     <Nav />
-    <router-view />
+    <!-- Title Row -->
+    <TitleRow />
+    <!--Split Col  -->
+    <div class="center row expand max">
+      <!-- 1 -->
+      <div class="col left">
+        <Sidebar />
+      </div>
+      <!-- 4 -->
+      <div class="col right">
+        <div class="borderContainer">
+          <router-view />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,13 +28,17 @@ import {
   border,
   subtext,
   muted,
-  bordermuted
+  bordermuted,
 } from "./constants/colors";
 import Nav from "./components/Nav.vue";
+import TitleRow from "@/components/TitleRow.vue";
+import Sidebar from "@/components/Sidebar.vue";
 
 export default {
   components: {
     Nav,
+    TitleRow,
+    Sidebar,
   },
   computed: {
     cssVars(): Record<string, unknown> {
@@ -41,7 +59,7 @@ export default {
 
 <style>
 @import "styles/reset.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 body,
 html {
@@ -93,5 +111,24 @@ h1 {
 h3 {
   font-size: 1.25rem;
   font-weight: 600;
+}
+</style>
+
+<style scoped>
+.borderContainer {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px;
+}
+
+.left {
+  width: 25%;
+  padding: 0px 24px;
+  margin-top: -32px;
+}
+
+.right {
+  width: 75%;
 }
 </style>
