@@ -11,9 +11,7 @@
       </div>
       <!-- 4 -->
       <div class="col right">
-        <div class="borderContainer">
-          <router-view />
-        </div>
+        <router-view />
       </div>
     </div>
   </div>
@@ -115,13 +113,6 @@ h3 {
 </style>
 
 <style scoped>
-.borderContainer {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 24px;
-  margin: 24px;
-}
-
 .left {
   width: 25%;
   padding: 0px 24px;

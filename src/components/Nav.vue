@@ -14,6 +14,14 @@
         About Me
       </div>
       <div
+        @click="setSelected('projects')"
+        :class="isSelected('projects')"
+        class="link"
+        to="/projects"
+      >
+        <fa class="icon" :icon="['fas', 'project-diagram']" />Projects
+      </div>
+      <div
         @click="setSelected('notes')"
         :class="isSelected('notes')"
         class="link"
@@ -23,20 +31,12 @@
         <fa class="icon" :icon="['fas', 'book']" />Notes
       </div>
       <div
-        @click="setSelected('projects')"
-        :class="isSelected('projects')"
-        class="link"
-        to="/projects"
-      >
-        <fa class="icon" :icon="['fas', 'project-diagram']" />Projects
-      </div>
-      <div
         @click="setSelected('contact')"
         :class="isSelected('contact')"
         class="link"
         to="/contact"
       >
-        <fa class="icon" :icon="['fas', 'cube']" />Contact
+        <fa class="icon" :icon="['fas', 'id-card']" />Contact
       </div>
     </div>
   </nav>

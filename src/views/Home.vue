@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <MainContent />
+    <div class="borderContainer">
+      <MainContent />
+    </div>
   </div>
 </template>
 
@@ -15,3 +17,12 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.borderContainer {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px;
+}
+</style>
