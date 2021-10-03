@@ -63,7 +63,7 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      selected: "home",
+      selected: window.location.href.split("/")[4] || "home",
     };
   },
   methods: {
