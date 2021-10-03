@@ -11,24 +11,71 @@
 import Vue from "vue";
 import Project from "@/components/Project.vue";
 
-const projects = [
+interface ProjectClass {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  languages: string[];
+  github: string;
+  live?: string;
+}
+
+const projects: ProjectClass[] = [
   {
-    title: "Test",
-    languages: ['Vue', 'Typescript', 'Javascript'],
-    technologies: ['Nuxt', 'Tailwind', 'Vuex'],
-    description: "Test description with a lot of text behind it to test that we are properly wrapping our text without any overlap ontop of the image that is over on the right hand side.",
-    image: "https://via.placeholder.com/125",
-    github: "",
+    title: "This Portfolio",
+    languages: ["Typescript"],
+    technologies: ["Vue"],
+    description: "Just a basic place to show off the crap I make.",
+    image: require("../assets/Portfolio.png"),
+    github: "https://github.com/joesobo/PoleskiPortfolio",
     live: "",
   },
   {
-    title: "Test",
-    languages: [],
-    technologies: [],
-    description: "Test description",
-    image: "https://via.placeholder.com/125",
-    github: "",
-    live: "",
+    title: "Tiny Turtle Tanks",
+    languages: ["C#", "Shaders"],
+    technologies: ["Unity", "MagicaVoxel"],
+    description:
+      "Tiny Turtle Tanks is a fun casual shooter game about exploring the solar system and ridding the exotic planets of evil Turtlebots.",
+    image: require("../assets/TinyTurtleTanks.jpg"),
+    github: "https://github.com/joesobo/TinyTurtleTanks",
+    live: "https://poleski.itch.io/tiny-turtle-tanks",
+  },
+  {
+    title: "Plant App",
+    description:
+      "A small React Native app for notifying you when your plants need watering or fertilizing.",
+    image: require("../assets/Plant.png"),
+    languages: ["Typescript"],
+    technologies: ["React Native"],
+    github: "https://github.com/joesobo/PlantApp",
+  },
+  {
+    title: "Marching Squares v1.0",
+    description:
+      "A small Unity Library for creating terrain based on the Marching Squares algorithm.",
+    image: require("../assets/MarchingSquares.png"),
+    languages: ["C#", "Compute Shaders"],
+    technologies: ["Unity"],
+    github: "https://github.com/joesobo/Marching-Squares",
+  },
+  {
+    title: "Unity Extension Library",
+    description:
+      "This is a basic Unity Extension Library for quicker coding capability.",
+    image: require("../assets/Unity.png"),
+    languages: ["C#"],
+    technologies: ["Unity"],
+    github: "https://github.com/joesobo/Unity-Extension-Library",
+  },
+  {
+    title: "Procedural Voxel Tree",
+    description:
+      "This is a small tool used to generate procedural trees that was created to assist making custom trees for my game TinyTurtleTanks. It is based off of the popular algorithm Space Colonization.",
+    image: require("../assets/Tree.png"),
+    languages: ["C#", "Shaders"],
+    technologies: ["Unity"],
+    github: "https://github.com/joesobo/ProceduralVoxelTree",
   },
 ];
 
