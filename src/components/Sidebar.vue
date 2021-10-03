@@ -14,6 +14,35 @@
     <hr />
 
     <h2>Work</h2>
+    <ul>
+      <li>work 1 (date)</li>
+      <li>work 2 (date)</li>
+    </ul>
+    <a>link to resume download</a>
+
+    <hr />
+
+    <h2>Social</h2>
+
+    <div class="row">
+      <a class="icon-button" href="https://github.com/joesobo" target="_blank">
+        <fa class="icon" :icon="['fab', 'github']" />
+      </a>
+      <a
+        class="icon-button"
+        href="https://twitter.com/JosephSobo"
+        target="_blank"
+      >
+        <fa class="icon" :icon="['fab', 'twitter']" />
+      </a>
+      <a
+        class="icon-button"
+        href="https://www.linkedin.com/in/joe-soboleski-34a502135/"
+        target="_blank"
+      >
+        <fa class="icon" :icon="['fab', 'linkedin-in']" />
+      </a>
+    </div>
 
     <hr />
   </div>
@@ -53,7 +82,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: thin;
   line-height: 24px;
   color: var(--muted);
@@ -61,7 +90,23 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.icon {
+  margin-right: 24px;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
 }
 </style>
