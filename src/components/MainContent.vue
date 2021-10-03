@@ -7,24 +7,40 @@
     />
 
     <div class="textContainer">
-      <h1>Hi! My name is Joseph Soboleski or Poleski</h1>
+      <h1>Hi! My name is Joseph Soboleski</h1>
 
       <h3>
         I'm a Software Engineer, Game Developer, and Front-End Web Developer
       </h3>
 
-      <img
-        align="left"
-        alt="JoeSobo's Github Stats"
-        src="https://github-readme-stats.vercel.app/api?username=joesobo&show_icons=true&theme=dark&hide_border=true&hide=prs,contribs"
-      />
+      <p>
+        Hello there! My name is Joe and I love making stuff. Doesn't matter what
+        kind of stuff, I'm always interested in learning how to create something
+        new. Whether its programming like game, web, or app development, or
+        learning how to make something else with my hands like cooking, I love
+        it all.
+      </p>
 
-      <img
-        align="left"
-        height="150px"
-        alt="JoeSobo's Language Stats"
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=joesobo&layout=compact&theme=dark&hide_border=true"
-      />
+      <p>
+        I have had the opportunity to work with a wide variety of technologies.
+        My journey started out with Java back in highschool when I was gaining
+        an interest in created my own games. After creating my own SIRI, I went
+        to college and studied many other languages like C#, Python, and
+        JavaScript. I worked on a few other projects like creating our own
+        language in Racket. During this time I also taught myself React and
+        Unity so I could work on my own
+        <router-link to="projects">Personal Projects</router-link>
+      </p>
+
+      <p>
+        I have recently graduated from California Poly Technical State
+        University (<a href="https://www.calpoly.edu/" target="_blank"
+          >Cal Poly</a
+        >) in San Luis Obispo. Currently I am working as an internal Frontend
+        Tools Engineer at
+        <a href="https://sendoso.com/" target="_blank">Sendoso</a>, where I
+        primarily work with Vue.
+      </p>
     </div>
   </div>
 </template>
@@ -55,5 +71,15 @@ h1 {
 
 h3 {
   margin: 50px 0px;
+}
+
+p {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
 }
 </style>

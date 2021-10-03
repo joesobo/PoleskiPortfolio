@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="link" @click="setSelected('home')" to="/">
+    <div class="link" @click="setSelected('home')">
       <fa class="logo" :icon="['fas', 'monument']" />
     </div>
     <div class="options">
@@ -8,7 +8,6 @@
         @click="setSelected('home')"
         :class="isSelected('home')"
         class="link"
-        to="/"
       >
         <fa
           class="icon"
@@ -21,7 +20,6 @@
         @click="setSelected('projects')"
         :class="isSelected('projects')"
         class="link"
-        to="/projects"
       >
         <fa
           class="icon"
@@ -33,7 +31,6 @@
         @click="setSelected('notes')"
         :class="isSelected('notes')"
         class="link"
-        to="/notes"
       >
         <fa
           class="icon"
@@ -45,7 +42,6 @@
         @click="setSelected('contact')"
         :class="isSelected('contact')"
         class="link"
-        to="/contact"
       >
         <fa
           class="icon"
@@ -68,11 +64,13 @@ export default Vue.extend({
   },
   methods: {
     setSelected(selected: string) {
-      this.selected = selected;
-      if (selected === "home") {
-        this.$router.push("/");
-      } else {
-        this.$router.push(`/${selected}`);
+      if (this.selected !== selected) {
+        this.selected = selected;
+        if (selected === "home") {
+          this.$router.push("/");
+        } else {
+          this.$router.push(`/${selected}`);
+        }
       }
     },
     isSelected(page: string) {
@@ -84,6 +82,11 @@ export default Vue.extend({
       if (this.selected === page) {
         return "selectedicon";
       }
+    },
+  },
+  watch: {
+    $route(to) {
+      this.selected = to.path.split("/")[1] || "home";
     },
   },
 });
