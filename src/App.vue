@@ -8,11 +8,11 @@
       <!-- 1 -->
       <div class="col left">
         <Sidebar v-if="selected !== 'notes'" />
-        <Notesbar v-if="selected === 'notes'" />
+        <Notesbar v-if="selected === 'notes'" @sendToNotes="sendToNotesPage" />
       </div>
       <!-- 4 -->
       <div class="col right">
-        <router-view />
+        <router-view :notes="selectedNote" />
       </div>
     </div>
   </div>
@@ -59,7 +59,13 @@ export default Vue.extend({
   data() {
     return {
       selected: window.location.href.split("/")[4] || "home",
+      selectedNote: "",
     };
+  },
+  methods: {
+    sendToNotesPage(note: string) {
+      this.selectedNote = note;
+    },
   },
   watch: {
     $route(to) {

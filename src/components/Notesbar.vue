@@ -2,7 +2,9 @@
   <div class="notebar">
     <div class="container">
       <div v-for="path in filePaths" :key="path">
-        <p>{{ path }}</p>
+        <p :class="isSelected(path)" @click="setSelected(path)">
+          {{ path }}
+        </p>
       </div>
     </div>
   </div>
@@ -13,6 +15,7 @@ export default {
   data() {
     return {
       filePaths: [],
+      selected: "",
     };
   },
   mounted() {
@@ -22,6 +25,19 @@ export default {
       .keys()
       .map((key) => key.replace("./3. Resources/", ""))
       .map((key) => key.replace(".md", ""));
+
+    this.setSelected(this.filePaths[0]);
+  },
+  methods: {
+    setSelected(path) {
+      this.selected = path;
+      this.$emit("sendToNotes", this.selected);
+    },
+    isSelected(path) {
+      if (this.selected === path) {
+        return "selected";
+      }
+    },
   },
 };
 </script>
@@ -41,6 +57,11 @@ export default {
 
 p {
   font-size: 14px !important;
-  margin-top: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--accent);
 }
 </style>

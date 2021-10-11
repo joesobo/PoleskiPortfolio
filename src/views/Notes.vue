@@ -11,26 +11,14 @@ import Vue from "vue";
 import marked from "marked";
 
 export default Vue.extend({
-  data() {
-    return {
-      index: 10,
-      filePaths: [],
-    };
-  },
+  props: ["notes"],
   asyncComputed: {
     async markdownToHtml() {
-      if (this.filePaths.length > 0) {
-        const test = await import(
-          `@/notes${this.filePaths[this.index].substring(1)}`
-        );
+      if (this.notes) {
+        const test = await import(`@/notes/3. Resources/${this.notes}.md`);
         return marked(test.default);
       }
     },
-  },
-  mounted() {
-    const files = require.context("@/notes", true);
-    console.log(files.keys());
-    this.filePaths = files.keys();
   },
 });
 </script>
