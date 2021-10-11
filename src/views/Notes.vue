@@ -14,14 +14,24 @@ export default Vue.extend({
   name: "Home",
   data() {
     return {
-      path: 'notes/3. Resources/Nuxt/Create Nuxt Module.md'
-    }
+      index: 10,
+      filePaths: [],
+    };
   },
   asyncComputed: {
     async markdownToHtml() {
-      const test = await import(`@/${this.path}`)
-      return marked(test.default);
+      if (this.filePaths.length > 0) {
+        const test = await import(
+          `@/notes${this.filePaths[this.index].substring(1)}`
+        );
+        return marked(test.default);
+      }
     },
+  },
+  mounted() {
+    const files = require.context("@/notes", true);
+    console.log(files.keys());
+    this.filePaths = files.keys();
   },
 });
 </script>
