@@ -7,7 +7,8 @@
     <div class="center row max">
       <!-- 1 -->
       <div class="col left">
-        <Sidebar />
+        <Sidebar v-if="selected !== 'notes'" />
+        <Notesbar v-if="selected === 'notes'" />
       </div>
       <!-- 4 -->
       <div class="col right">
@@ -18,6 +19,7 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
 import {
   background,
   text,
@@ -31,12 +33,14 @@ import {
 import Nav from "./components/Nav.vue";
 import TitleRow from "@/components/TitleRow.vue";
 import Sidebar from "@/components/Sidebar.vue";
+import Notesbar from "@/components/Notesbar.vue";
 
-export default {
+export default Vue.extend({
   components: {
     Nav,
     TitleRow,
     Sidebar,
+    Notesbar,
   },
   computed: {
     cssVars(): Record<string, unknown> {
@@ -52,7 +56,17 @@ export default {
       };
     },
   },
-};
+  data() {
+    return {
+      selected: window.location.href.split("/")[4] || "home",
+    };
+  },
+  watch: {
+    $route(to) {
+      this.selected = to.path.split("/")[1] || "home";
+    },
+  },
+});
 </script>
 
 <style>
