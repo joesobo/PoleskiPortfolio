@@ -11,7 +11,6 @@ import Vue from "vue";
 import marked from "marked";
 
 export default Vue.extend({
-  name: "Home",
   data() {
     return {
       index: 10,
