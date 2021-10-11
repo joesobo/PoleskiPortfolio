@@ -9,13 +9,18 @@
 <script>
 import Vue from "vue";
 import marked from "marked";
-import test from "../notes/3. Resources/Nuxt/Create Nuxt Module.md"
 
 export default Vue.extend({
   name: "Home",
-  computed: {
-    markdownToHtml() {
-      return marked(test);
+  data() {
+    return {
+      path: 'notes/3. Resources/Nuxt/Create Nuxt Module.md'
+    }
+  },
+  asyncComputed: {
+    async markdownToHtml() {
+      const test = await import(`@/${this.path}`)
+      return marked(test.default);
     },
   },
 });
