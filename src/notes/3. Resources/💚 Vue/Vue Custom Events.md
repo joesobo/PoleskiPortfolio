@@ -6,6 +6,7 @@ Refererences: [[💚 Vue]] [[Events]]
 -   use emitter and listener for communicating event triggers
 -   event names must match
 -   recommended always use kebab-case `custom-event`
+
 ```jsx
 this.$emit('custom-event');
 
@@ -13,6 +14,7 @@ this.$emit('custom-event');
 ```
 
 -   custom component example:
+
 ```jsx
 // CustomCheck emits event change with result
 <template>
@@ -36,6 +38,7 @@ exports default {
 ```
 
 -   listener
+
 ```jsx
 computed: {
 	inputListeners: function() {

@@ -4,6 +4,7 @@ Refererences: [[💚 Vue]] [[Components]]
 # Components
 
 -   Global Registration
+
 ```jsx
 app.component('MyComponent', {
 	...
@@ -15,6 +16,7 @@ app.component('MyComponent', {
 ```
 
 -   Local Registration
+
 ```jsx
 import MyComponent from './MyComponent.vue';
 

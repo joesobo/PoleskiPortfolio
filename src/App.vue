@@ -78,6 +78,7 @@ export default Vue.extend({
 <style>
 @import "styles/reset.css";
 @import "styles/base.css";
+@import "styles/syntax.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 </style>
 
