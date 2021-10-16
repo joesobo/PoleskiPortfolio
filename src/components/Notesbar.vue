@@ -2,9 +2,12 @@
   <div class="notebar">
     <div v-for="folder in folders" :key="folder">
       <!-- TODO: add dropdown icon here -->
-      <p :class="isFolderSelected(folder)" @click="setFolderSelected(folder)">
-        {{ folder }}
-      </p>
+      <div class="row folderRow" @click="setFolderSelected(folder)">
+        <fa :class="isFolderSelected(folder)" class="dropdown" :icon="['fas', 'caret-down']" />
+        <p :class="isFolderSelected(folder)">
+          {{ folder }}
+        </p>
+      </div>
       <div v-if="selectedFolder && selectedFolder === folder">
         <div v-for="path in filePaths" :key="path">
           <p
@@ -67,12 +70,11 @@ export default {
           const basicPath = path.replace(folder + "/", "");
           if (path.startsWith(folder) && basicPath === folder) {
             return path;
-          } 
+          }
         });
 
         this.setSelected(folderFile);
       }
-
     },
     isFolderSelected(folder) {
       if (this.selectedFolder === folder) {
@@ -104,15 +106,29 @@ p {
   cursor: pointer;
 }
 
+.folderRow {
+  cursor: pointer;
+}
+
 .selected {
   color: var(--accent);
 }
 
 .file {
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
 .selectedFolder {
   color: var(--accent);
+}
+
+.dropdown {
+  margin-top: 16px;
+  margin-right: 8px;
+  rotate: -90deg;
+}
+
+.dropdown.selectedFolder {
+  rotate: 0deg;
 }
 </style>
