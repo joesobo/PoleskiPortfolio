@@ -63,7 +63,16 @@ export default {
         this.selectedFolder = "";
       } else {
         this.selectedFolder = folder;
+        const folderFile = this.filePaths.find((path) => {
+          const basicPath = path.replace(folder + "/", "");
+          if (path.startsWith(folder) && basicPath === folder) {
+            return path;
+          } 
+        });
+
+        this.setSelected(folderFile);
       }
+
     },
     isFolderSelected(folder) {
       if (this.selectedFolder === folder) {
@@ -71,7 +80,8 @@ export default {
       }
     },
     startsWithFolder(folder, path) {
-      return path.startsWith(folder);
+      const basicPath = path.replace(folder + "/", "");
+      return path.startsWith(folder) && basicPath !== folder;
     },
     formatPath(folder, path) {
       return path.replace(folder + "/", "");

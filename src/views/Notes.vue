@@ -1,7 +1,5 @@
 <template>
   <div class="notes">
-    <h1>This is an notes page</h1>
-
     <div v-html="markdownToHtml" />
   </div>
 </template>
@@ -47,5 +45,9 @@ export default Vue.extend({
   border-radius: 8px;
   padding: 24px;
   margin: 24px;
+}
+
+div {
+  margin-top: 16px;
 }
 </style>
