@@ -5,6 +5,8 @@ code {
   overflow-x: auto;
   padding: 1em;
   margin: 8px;
+  color: #adbac7;
+  background: #22272e;
 }
 
 pre code.hljs {
