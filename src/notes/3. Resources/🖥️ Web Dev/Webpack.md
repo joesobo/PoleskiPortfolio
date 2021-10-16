@@ -1,5 +1,5 @@
 Tags:  #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[🖥️ Web Dev]]  
+References: [[🖥️ Web Dev]]  
 	
 # Webpack Cheatsheet
 

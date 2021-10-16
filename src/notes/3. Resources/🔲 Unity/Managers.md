@@ -16,6 +16,7 @@ This is an object that managers and controls the state of a large group of sub-o
 ---
 
 Good design pattern example:
+
 ```cs
 public class FishManager : Monobehaviour {
 	public static List<Fish> allFish = new List<Fish>();

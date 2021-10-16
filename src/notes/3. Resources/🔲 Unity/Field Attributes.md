@@ -14,6 +14,7 @@ Links:
 Field attributes are properties that are publicly exposed to be modified by the user.
 
 Basic Example of script:
+
 ```cs
 public class Barrel : MonoBehaviour {
 	public float range = 1;

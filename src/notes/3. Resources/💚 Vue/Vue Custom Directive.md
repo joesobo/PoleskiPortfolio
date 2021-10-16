@@ -1,9 +1,10 @@
 Tags: #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[💚 Vue]]
+References: [[💚 Vue]]
 
 # Custom Directive
 
 -   register new directive
+	
 ```jsx
 // Custom directive called v-focus
 Vue.directive('focus', {
@@ -14,6 +15,7 @@ Vue.directive('focus', {
 ```
 
 -   locally register new directive
+	
 ```jsx
 // Local custom directive called v-focus
 directives: {
@@ -26,6 +28,7 @@ directives: {
 ```
 
 -   use custom directive
+	
 ```jsx
 <input v-focus>
 ```

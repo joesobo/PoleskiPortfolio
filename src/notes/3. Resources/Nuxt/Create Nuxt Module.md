@@ -1,7 +1,7 @@
 ???+ ad-tip Info
 
 tags: #🕸️/🟦 #🏷️    
-Refererences: [[Nuxt Modules]]  
+References: [[Nuxt Modules]]  
 Links: https://nuxtjs.org/docs/directory-structure/modules/#write-your-own-module
 
 --- admonition
@@ -14,6 +14,7 @@ Links: https://nuxtjs.org/docs/directory-structure/modules/#write-your-own-modul
 A Nuxt Module is just a simple function.
 
 When using a Nuxt Module in your `nuxt.config.js` it can look a little something like this:
+
 ```json
 export default {
   exampleMsg: 'hello',
@@ -27,6 +28,7 @@ export default {
 In this example we can see 2 examples of using the `example` module. The first is the most basic design, and the second has a optionally passed argument attached to it. Above all that we can see another option called `exampleMsg` has been attached to the `nuxt.config.js`.
 
 The base nuxt module builds off of this core function:
+
 ```jsx
 export default function ExampleModule(moduleOptions) {
   console.log(moduleOptions.token) // '123'
@@ -66,6 +68,7 @@ These include
 This can also be useful for installing Vue Plugins. This exists for modules that utilize more than one plugin. To install plugins use the `this.addPlugin` helper method.
 
 Ex:
+
 ```jsx
 // plugin.js
 

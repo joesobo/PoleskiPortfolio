@@ -33,6 +33,7 @@ void Awake() {
 ---
 
 How to create assets in editor mode without leaking using `HideFlags`
+
 ```cs
 void Awake() {
 	Shader shader = Shader.Find("Default/Diffuse");
@@ -51,6 +52,7 @@ void Awake() {
 #### Best Method
 
 Proper way using a `MaterialPropertyBlock`:
+
 ```cs
 MaterialPropertyBlock mpb;
 static readonly int shPropColor = Shader.PropertyToID("_Color");

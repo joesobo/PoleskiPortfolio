@@ -1,7 +1,7 @@
 ???+ ad-tip Info
 
 tags: #🕸️/🟦 #🏷️
-Refererences: [[Obsidian]] [[PARA]]    
+References: [[Obsidian]] [[PARA]]    
 Links:  
 - https://notes.nicolevanderhoeven.com/Fork+My+Brain
 - https://www.youtube.com/c/ProductivityGuru/videos

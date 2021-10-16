@@ -1,7 +1,7 @@
 ???+ ad-tip Info
 
 tags: #🕸️/🟦 #🏷️     
-Refererences: [[Nuxt]]   
+References: [[Nuxt]]   
 Links: https://nuxtjs.org/docs/directory-structure/plugins/
 
 --- admonition

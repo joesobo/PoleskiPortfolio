@@ -20,6 +20,7 @@ If we want to visualize in the Scene View we use Gizmos. Gizmos are just editor 
 ---
 
 Example of drawing a wire sphere around our object:
+
 ```cs
 void OnDrawGizmos() {
 	Gizmos.DrawWireSphere(transform.position, radius);
@@ -27,6 +28,7 @@ void OnDrawGizmos() {
 ```
 
 Example of drawing line from a manager to its children:
+
 ```cs
 void OnDrawGizmos() {
 	foreach(Fish fish in allFish) {

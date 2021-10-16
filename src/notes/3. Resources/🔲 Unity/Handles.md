@@ -16,6 +16,7 @@ Handles are an editor only class that allows you to draw stuff similar to gizmos
 To ensures that Unity will not include this script at build time, meaning it is only for editor usage,  you must wrap the code you want excluded in `#if UNITY_EDITOR` and `#endif`.
 
 Example of drawing anti-aliasing lines:
+
 ```cs
 #if UNITY_EDITOR
 using UnityEditor;
