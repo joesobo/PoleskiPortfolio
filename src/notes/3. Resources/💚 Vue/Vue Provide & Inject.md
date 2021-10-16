@@ -1,5 +1,5 @@
 Tags:  #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[💚 Vue]] [[Provide]] [[Inject]]
+References: [[💚 Vue]] [[Provide]] [[Inject]]
 
 # Provide / Inject
 
@@ -23,6 +23,7 @@ Refererences: [[💚 Vue]] [[Provide]] [[Inject]]
 ### Simple
 
 Parent provider
+
 ```jsx
 provide: {
 	user: 'Test User'
@@ -30,6 +31,7 @@ provide: {
 ```
 
 Child injector
+
 ```jsx
 inject: ['user'],
 created() {
@@ -41,6 +43,7 @@ created() {
 ### Advanced
 
 Parent provider
+
 ```jsx
 data() {
 	return { nums: [1, 2, 3] }
@@ -53,6 +56,7 @@ provide() {
 ```
 
 Child injector
+
 ```jsx
 inject: ['numsLength'],
 created() {
@@ -63,6 +67,7 @@ created() {
 ### Reactivity
 
 -   provide / inject are not reactive by default
+	
 ```jsx
 provide() {
 	return {

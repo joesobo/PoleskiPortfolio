@@ -1,9 +1,10 @@
 Tags:  #🕸️/🟦 #🏷️ #📜️  
-Refererences: [[💚 Vue]] [[List]]
+References: [[💚 Vue]] [[List]]
 
 # List Rendering
 
 -   v-for
+	
 ```jsx
 <li v-for="item in items">{{ item }}</li>
 
@@ -13,21 +14,25 @@ or
 ```
 
 -   v-for with index
+	
 ```jsx
 <li v-for="(item, index) in items">{{ index }} - {{ item }}</li>
 ```
 
 -   v-for with object
+	
 ```jsx
 <li v-for="value in object">{{ value }}</li>
 ```
 
 -   Maintain state - gives Vue a hint to track elements identity (key must be unique)
+	
 ```jsx
 <li v-for="item in items" :key="item.id">{{ item }}</li>
 ```
 
 -   filtered rendering
+	
 ```jsx
 <li v-for="n in evenNums" :key="n">{{ n }}</li>
 
@@ -39,6 +44,7 @@ computed: {
 ```
 
 -   range
+	
 ```jsx
 <li v-for="n in 10" :key="n">{{ n }}</li>
 ```

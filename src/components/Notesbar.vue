@@ -1,7 +1,6 @@
 <template>
   <div class="notebar">
     <div v-for="folder in folders" :key="folder">
-      <!-- TODO: add dropdown icon here -->
       <div class="row folderRow" @click="setFolderSelected(folder)">
         <fa :class="isFolderSelected(folder)" class="dropdown" :icon="['fas', 'caret-down']" />
         <p :class="isFolderSelected(folder)">
@@ -25,6 +24,7 @@
 </template>
 
 <script>
+// TODO: add sorting for files and folders
 export default {
   data() {
     return {

@@ -6,6 +6,7 @@ Refererences: [[💚 Vue]] [[Slot]]
 -   Useful for passing content to a component
 -   without a slot tag any extra info is trashed
 -   must specify name if using shorthand
+	
 ```jsx
 // parent
 <alertBox>
@@ -19,6 +20,7 @@ Refererences: [[💚 Vue]] [[Slot]]
 
 -   using data in a slot
     -   slot has access to templates scope
+
     ```jsx
     // runs
     <alertBox>
@@ -27,6 +29,7 @@ Refererences: [[💚 Vue]] [[Slot]]
     ```
     
     -   slot has no access to components scope
+
     ```jsx
     // does not run
     <alertBox error="test error">
@@ -35,11 +38,13 @@ Refererences: [[💚 Vue]] [[Slot]]
     ```
     
 -   Default - rendered when no content provided
+	
 ```jsx
 <slot>Default Text</slot>
 ```
 
 -   Named Slots - useful for multiple slots (slot with no name is "default")
+	
 ```jsx
 // parent
 <alertBox>
@@ -58,6 +63,7 @@ Refererences: [[💚 Vue]] [[Slot]]
 
 -   Scoped Slots - makes item variable available to slot content
     -   attributes bounded to slot are called slot props
+    	
 ```jsx
 // parent
 <alertBox>

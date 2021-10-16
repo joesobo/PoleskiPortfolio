@@ -1,3 +1,11 @@
+blockquote {
+  /* TODO: better blockquotes for >Example */
+}
+
+code {
+  /* TODO: better code highlighting for `example` */
+}
+
 code {
   text-align: left;
   white-space: pre;

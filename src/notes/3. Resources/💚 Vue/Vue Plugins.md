@@ -1,18 +1,20 @@
 Tags:  #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[💚 Vue]] [[Plugin]]
+References: [[💚 Vue]] [[Plugin]]
 
 # Plugins
 
-A Vue plugin is essentialy an object wrapping around an `install()` function. `Vue.use()` registers the plugin and executes the install function.
+A Vue plugin is essentially an object wrapping around an `install()` function. `Vue.use()` registers the plugin and executes the install function.
 
 -   Add global functionality
 -   use plugin by calling `Vue.use()` before `new Vue()`
 -   ex: vue-router or vue-touch
+	
 ```jsx
 Vue.use(MyPlugin, { options: true })
 ```
 
 -   plugins should expose an `install` method
+	
 ```jsx
 MyPlugin.install = function(Vue, options) {
 	

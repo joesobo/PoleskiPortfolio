@@ -1,5 +1,5 @@
 Tags:  #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[💚 Vue]] [[Properties]] [[Methods]]
+References: [[💚 Vue]] [[Properties]] [[Methods]]
 
 # Properties and Methods
 

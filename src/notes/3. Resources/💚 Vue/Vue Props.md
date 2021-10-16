@@ -1,11 +1,12 @@
 Tags:  #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[💚 Vue]] [[Props]]
+References: [[💚 Vue]] [[Props]]
 
 # Props
 
 -   `props: ['title', 'test']`
 -   custom attributes to register on component
 -   communicated from parents to child
+	
 ```jsx
 <post v-for="post in posts" title="Post Title" />   //parent component
 
@@ -16,6 +17,9 @@ props: ['title']
 -   dynamic props
     -   numbers / arrays / objects must also be bound with `v-bind`
     -   booleans must be bound if not true (default)
+    	
+- dynamic example:
+	
 ```jsx
 <post v-for="post in posts" :title="post.title" />
 <post v-for="post in posts" :value=50 />
@@ -23,6 +27,7 @@ props: ['title']
 ```
 
 -   communicated from child to parent
+	
 ```jsx
 <post @enlarge="size += 1" />   //parent component
 
@@ -31,6 +36,7 @@ emits: ['enlarge']
 ```
 
 -   emit value with event
+	
 ```jsx
 <post @enlarge="size += $event" />   //parent component
 
@@ -38,6 +44,7 @@ emits: ['enlarge']
 ```
 
 -   Typescript props
+	
 ```jsx
 props: {
 	title: String,
@@ -46,6 +53,7 @@ props: {
 ```
 
 -   Special Props (failed props will return console warning)
+	
 ```jsx
 props: {
 	multiplePossibilities: [String, Number],
@@ -86,6 +94,7 @@ props: {
 ### Common issues with one-way binding (so you don't modify props)
 
  - prop is initial value & want to use as local data
+
 ```jsx
 props: ['initCounter'],
 data() {
@@ -96,6 +105,7 @@ data() {
 ```
 
  -  prop is raw value that needs transformation
+
 ```jsx
 props: ['size'],
 computed: {
