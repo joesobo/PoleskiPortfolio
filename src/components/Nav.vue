@@ -38,17 +38,6 @@
           :icon="['fas', 'book']"
         />Notes
       </div>
-      <div
-        @click="setSelected('contact')"
-        :class="isSelected('contact')"
-        class="link"
-      >
-        <fa
-          class="icon"
-          :class="isSelectedIcon('contact')"
-          :icon="['fas', 'id-card']"
-        />Contact
-      </div>
     </div>
   </nav>
 </template>
