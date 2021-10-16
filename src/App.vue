@@ -1,20 +1,27 @@
 <template>
   <div id="app" :style="cssVars">
-    <Nav />
-    <!-- Title Row -->
-    <TitleRow />
-    <!--Split Col  -->
-    <div class="center row max">
-      <!-- 1 -->
-      <div class="col left">
-        <Sidebar v-if="selected !== 'notes'" />
-        <Notesbar v-if="selected === 'notes'" @sendToNotes="sendToNotesPage" />
-      </div>
-      <!-- 4 -->
-      <div class="col right">
-        <router-view :notes="selectedNote" />
+    <div>
+      <Nav />
+      <!-- Title Row -->
+      <TitleRow />
+      <!--Split Col  -->
+      <div class="center row max">
+        <!-- 1 -->
+        <div class="col left">
+          <Sidebar v-if="selected !== 'notes'" />
+          <Notesbar
+            v-if="selected === 'notes'"
+            @sendToNotes="sendToNotesPage"
+          />
+        </div>
+        <!-- 4 -->
+        <div class="col right">
+          <router-view :notes="selectedNote" />
+        </div>
       </div>
     </div>
+
+    <Footer />
   </div>
 </template>
 
@@ -34,6 +41,7 @@ import Nav from "./components/Nav.vue";
 import TitleRow from "@/components/TitleRow.vue";
 import Sidebar from "@/components/Sidebar.vue";
 import Notesbar from "@/components/Notesbar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   components: {
@@ -41,6 +49,7 @@ export default Vue.extend({
     TitleRow,
     Sidebar,
     Notesbar,
+    Footer,
   },
   computed: {
     cssVars(): Record<string, unknown> {
@@ -83,6 +92,12 @@ export default Vue.extend({
 </style>
 
 <style scoped>
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .left {
   width: 25%;
   padding: 0px 24px;
