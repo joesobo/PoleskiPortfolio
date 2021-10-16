@@ -4,7 +4,6 @@ Refererences: [[💚 Vue]]
 # Custom Directive
 
 -   register new directive
-
 ```jsx
 // Custom directive called v-focus
 Vue.directive('focus', {
@@ -15,20 +14,18 @@ Vue.directive('focus', {
 ```
 
 -   locally register new directive
-
 ```jsx
 // Local custom directive called v-focus
 directives: {
-    focus: {
-        inserted: function(el) {
-            el.focus();
-        }
-    }
+	focus: {
+		inserted: function(el) {
+			el.focus();
+		}
+	}
 }
 ```
 
 -   use custom directive
-
 ```jsx
 <input v-focus>
 ```
