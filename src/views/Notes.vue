@@ -33,7 +33,7 @@ export default Vue.extend({
     async markdownToHtml() {
       if (this.notes) {
         const test = await import(`@/notes/3. Resources/${this.notes}.md`);
-        console.log(marked(test.default));
+        // console.log(marked(test.default));
         return marked(test.default);
       }
     },
