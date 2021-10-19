@@ -4,10 +4,10 @@ CreationDate: <% tp.file.creation_date() %>
 LastModificationDate: <% tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss") %>
 Sleep: 
 Quality: 
-Workout: 
-Addiction:
-WalkDog:
-Journal:
+Workout: ✅❌ 
+Addiction: ✅❌
+WalkDog: ✅❌
+Journal: ✅❌
 
 ---
 tags: #🕸️/🟩️
