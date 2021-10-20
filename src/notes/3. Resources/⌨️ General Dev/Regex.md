@@ -11,7 +11,7 @@ Links:
 
 # `$= dv.current().file.name`
 
-Regex is primarily for finding patterns in text
+Regex is primarily for finding patterns in text. Use this site to test https://regex101.com/
 
 Used to:
 1. Validate text
@@ -48,81 +48,23 @@ const regex = /bob/g
 
 ### Special Characters
 
-- `.`
+#### Explicit Counts  - `{ }`
 	
-```js
-
+```regex
+/color{2,6}/g
 ```
 
-- `^`
-	
-```js
-
-```
-
-- `$`
-	
-```js
-
-```
-
-- `*`
-	
-```js
-
-```
-
-- `+`
-	
-```js
-
-```
-
-- `-`
-	
-```js
-
-```
-
-- Quantifier - `?`
-	- how many times its allowed to show up
-	- `?` - 0 o
+#### Quantifier
+- how many times its allowed to show up
+- `?` - 0 or 1 time
+- `*` - 0 or more times
+- `+` - 1 or more times
 		
 ```regex
-
+/colou?r/g
 ```
 
-- `[`
-	
-```js
-
-```
-
-- `]`
-	
-```js
-
-```
-
-- `{`
-	
-```js
-
-```
-
-- `}`
-	
-```js
-
-```
-
-- `\`
-	
-```js
-
-```
-
-- Logical OR - `|`
+#### Logical OR - `|`
 	
 ```regex
 /Bob|Alice/g
@@ -130,4 +72,45 @@ const regex = /bob/g
 
 ```regex
 /(Bob|Alice)Jones/g
+```
+
+#### Escape Special Characters - `\`
+- Means actually using one of these characters in a search
+	
+```regex
+/colors\?/g
+```
+
+- can also refer to a character class
+	- `\d` - any digit
+	- `\w` - any word character
+	- `\D` - anything not a digit
+	- `\W` - anything not a word character
+
+#### Character Sets - `[ ]`
+- used to define custom character sets
+
+Example of all capital letters from A to Z:
+
+```regex
+/[A-Z]/g
+```
+
+#### Negate - `^`
+- used to negate
+	
+Example of all except for capital letters from A to Z:
+	
+```regex
+/[^A-Z]/g
+```
+
+#### Match end - `$`
+- Matches end position of a line
+
+#### Match any - `.`
+- Matches any single character
+	
+```regex
+/a.c/
 ```
