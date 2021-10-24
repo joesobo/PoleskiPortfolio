@@ -8,7 +8,7 @@
       hi, I’ll try my best to get back to you!
     </p>
 
-    <button>Send me a message!</button>
+    <a href="mailto:soboleskijoe@gmail.com">Send me a message!</a>
     <div class="border" />
   </footer>
 </template>
@@ -42,7 +42,7 @@ p {
   max-width: 500px;
 }
 
-button {
+a {
   max-width: 300px;
   width: 100%;
   margin-top: 24px;
