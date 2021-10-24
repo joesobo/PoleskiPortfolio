@@ -2,7 +2,11 @@
   <div class="notebar">
     <div v-for="folder in folders" :key="folder">
       <div class="row folderRow" @click="setFolderSelected(folder)">
-        <fa :class="isFolderSelected(folder)" class="dropdown" :icon="['fas', 'caret-down']" />
+        <fa
+          :class="isFolderSelected(folder)"
+          class="dropdown"
+          :icon="['fas', 'caret-down']"
+        />
         <p :class="isFolderSelected(folder)">
           {{ folder }}
         </p>
