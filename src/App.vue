@@ -5,7 +5,7 @@
       <!-- Title Row -->
       <TitleRow />
       <!--Split Col  -->
-      <div class="center row max">
+      <div class="row center max">
         <!-- 1 -->
         <div class="col left">
           <Sidebar v-if="selected !== 'notes'" />
@@ -21,7 +21,11 @@
       </div>
     </div>
 
-    <Footer />
+    <div class="row spaced bottom">
+      <SocialBar />
+      <Footer />
+      <EmailBar />
+    </div>
   </div>
 </template>
 
@@ -42,6 +46,8 @@ import TitleRow from "@/components/TitleRow.vue";
 import Sidebar from "@/components/Sidebar.vue";
 import Notesbar from "@/components/Notesbar.vue";
 import Footer from "@/components/Footer.vue";
+import SocialBar from "@/components/SocialBar.vue";
+import EmailBar from "@/components/EmailBar.vue";
 
 export default Vue.extend({
   components: {
@@ -50,6 +56,8 @@ export default Vue.extend({
     Sidebar,
     Notesbar,
     Footer,
+    SocialBar,
+    EmailBar,
   },
   computed: {
     cssVars(): Record<string, unknown> {
@@ -111,5 +119,9 @@ a {
 
 .right {
   width: 75%;
+}
+
+.bottom {
+  align-items: flex-end;
 }
 </style>

@@ -30,6 +30,10 @@ html {
   justify-content: center;
 }
 
+.spaced {
+  justify-content: space-between;
+}
+
 .max {
   width: 100%;
   max-width: 1280px;
