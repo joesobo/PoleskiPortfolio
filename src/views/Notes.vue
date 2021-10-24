@@ -31,8 +31,15 @@ export default Vue.extend({
     async markdownToHtml() {
       if (this.notes) {
         const test = await import(`@/notes/3. Resources/${this.notes}.md`);
-        // console.log(marked(test.default));
-        return marked(test.default);
+        const name = this.notes.split("/");
+        const parsed = test.default
+          .replace("`$= dv.current().file.name`", name[1] ? name[1] : name[0])
+          .replaceAll("[[", "")
+          .replaceAll("![[", "")
+          .replaceAll("]]", "")
+          .split("--- admonition");
+        console.log(parsed);
+        return marked(parsed[1] ? parsed[1] : parsed[0]);
       }
     },
   },

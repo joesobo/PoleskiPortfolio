@@ -102,6 +102,7 @@ export default {
 
 p {
   font-size: 14px !important;
+  margin: 0px;
   margin-top: 16px;
   cursor: pointer;
 }
