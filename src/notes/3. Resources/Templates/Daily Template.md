@@ -8,6 +8,7 @@ Workout: ✅❌
 Addiction: ✅❌
 WalkDog: ✅❌
 Journal: ✅❌
+Mood: ☺️😄😐😶🙄🤷‍♂️😞😢😠😬
 
 ---
 tags: #🕸️/🟩️
@@ -38,18 +39,6 @@ Write your thoughts out here
 
 ### Evening Brain Dump
 Write your thoughts out here
-
-<br>
-
-### Mood
-- [ ] ☺️
-- [ ] 😄
-- [ ] 😐
-- [ ] 😶
-- [ ] 🙄
-- [ ] 🤷‍♂️
-- [ ] 😞
-- [ ] 😢
 
 <br>
 
