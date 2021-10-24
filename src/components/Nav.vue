@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <div class="link" @click="setSelected('home')">
-      <fa class="logo" :icon="['fas', 'monument']" />
+    <div class="logo-link" @click="setSelected('home')">
+      <img src="../assets/logo.png" />
     </div>
     <div class="options">
       <div
@@ -107,6 +107,18 @@ nav div {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.logo-link {
+  padding: 4px;
+  cursor: pointer;
+}
+
+img {
+  margin-left: 16px;
+  width: 64px;
+  height: 64px;
+  color: var(--subtext);
 }
 
 .icon {
