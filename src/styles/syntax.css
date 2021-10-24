@@ -3,18 +3,11 @@ blockquote {
 }
 
 code {
-  /* TODO: better code highlighting for `example` */
-}
-
-code {
   text-align: left;
-  white-space: pre;
-  display: block;
   overflow-x: auto;
-  padding: 1em;
-  margin: 8px;
   color: #adbac7;
   background: #22272e;
+  padding: 0.15em 0.25em;
 }
 
 pre code.hljs {
@@ -23,6 +16,9 @@ pre code.hljs {
   padding: 1em;
 }
 code.hljs {
+  line-height: 1.5;
+  padding: 1em;
+  margin: 16px 0px;
   padding: 3px 5px;
 }
 /*!

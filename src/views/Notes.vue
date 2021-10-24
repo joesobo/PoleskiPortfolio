@@ -50,4 +50,8 @@ export default Vue.extend({
 div {
   margin-top: 16px;
 }
+
+.notes {
+  text-align: left;
+}
 </style>
