@@ -75,13 +75,16 @@ h1 {
   font-size: 28px;
   line-height: 1.25;
   padding-top: 16px;
+  margin: 8px 0px;
 }
 
 h2 {
   font-size: 22px;
+  margin: 0;
 }
 
 h3 {
+  margin: 0;
   font-size: 16px;
   font-weight: thin;
   line-height: 24px;
@@ -92,6 +95,7 @@ h3 {
 p {
   font-size: 14px;
   line-height: 1.5;
+  margin: 0px;
 }
 
 .icon-button {
