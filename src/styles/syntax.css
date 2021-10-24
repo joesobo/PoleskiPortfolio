@@ -5,8 +5,8 @@ blockquote {
 code {
   text-align: left;
   overflow-x: auto;
-  color: #adbac7;
-  background: #22272e;
+  color: #f69d50;
+  background: #20242b;
   padding: 0.1em;
   line-height: 2;
 }
@@ -33,7 +33,7 @@ code.hljs {
  */
 .hljs {
   color: #adbac7;
-  background: #22272e;
+  background: #20242b;
 }
 .hljs-doctag,
 .hljs-keyword,
