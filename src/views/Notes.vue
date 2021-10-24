@@ -27,19 +27,35 @@ marked.setOptions({
 
 export default Vue.extend({
   props: ["notes"],
+  methods: {
+    cleanupMarkdown(input) {
+      const name = this.notes.split("/");
+      const temp = input
+        .replace("`$= dv.current().file.name`", name[1] ? name[1] : name[0])
+        .replaceAll("![[", "")
+        .replaceAll("[[", "")
+        .replaceAll("]]", "")
+        .replaceAll("#dv current file name", "")
+        .split("--- admonition");
+      let value = temp[1] ? temp[1] : temp[0];
+      if (value.includes("```ccard")) {
+        value =
+          value.substring(0, value.lastIndexOf("```ccard")) +
+          value.substring(value.lastIndexOf("```") + 3, value.length);
+      }
+      if (value.includes("```dataview")) {
+        value =
+          value.substring(0, value.lastIndexOf("```dataview")) +
+          value.substring(value.lastIndexOf("```") + 3, value.length);
+      }
+      return value;
+    },
+  },
   asyncComputed: {
     async markdownToHtml() {
       if (this.notes) {
         const test = await import(`@/notes/3. Resources/${this.notes}.md`);
-        const name = this.notes.split("/");
-        const parsed = test.default
-          .replace("`$= dv.current().file.name`", name[1] ? name[1] : name[0])
-          .replaceAll("[[", "")
-          .replaceAll("![[", "")
-          .replaceAll("]]", "")
-          .split("--- admonition");
-        console.log(parsed);
-        return marked(parsed[1] ? parsed[1] : parsed[0]);
+        return marked(this.cleanupMarkdown(test.default));
       }
     },
   },
