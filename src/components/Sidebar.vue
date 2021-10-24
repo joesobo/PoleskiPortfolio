@@ -10,15 +10,24 @@
     <hr />
 
     <h2>Languages</h2>
+    <ul>
+      <li>Javascript</li>
+      <li>Typescript</li>
+      <li>C#</li>
+    </ul>
 
     <hr />
 
     <h2>Work</h2>
     <ul>
-      <li>work 1 (date)</li>
-      <li>work 2 (date)</li>
+      <li>Sendoso (current)</li>
+      <li>Metal (2018-2020)</li>
     </ul>
-    <a>link to resume download</a>
+    <a
+      href="https://docs.google.com/document/d/1MUk3zuh81HkR4eyLG5xbE_zFTnEzWehpW8FiJHq1YTU/edit?usp=sharing"
+      target="_blank"
+      >Download my resume!</a
+    >
 
     <hr />
   </div>
@@ -75,6 +84,7 @@ p {
 }
 
 a {
+  margin-top: 32px;
   color: var(--accent);
 }
 </style>
