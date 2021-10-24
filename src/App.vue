@@ -62,6 +62,7 @@ export default Vue.extend({
         "--border": border,
         "--muted": muted,
         "--bordermuted": bordermuted,
+        "--linkColor": this.selected === "notes" ? "#96d0ff" : text,
       };
     },
   },
@@ -89,6 +90,10 @@ export default Vue.extend({
 @import "styles/base.css";
 @import "styles/syntax.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+a {
+  color: var(--linkColor);
+}
 </style>
 
 <style scoped>

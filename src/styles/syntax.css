@@ -2,10 +2,6 @@ blockquote {
   /* TODO: better blockquotes for >Example */
 }
 
-a {
-  color: #96d0ff;
-}
-
 code {
   text-align: left;
   overflow-x: auto;

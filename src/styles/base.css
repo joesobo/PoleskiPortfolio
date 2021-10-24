@@ -36,10 +36,6 @@ html {
   margin: 0 auto;
 }
 
-a {
-  color: var(--text);
-}
-
 p,
 li {
   line-height: 1.5;

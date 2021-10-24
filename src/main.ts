@@ -15,6 +15,8 @@ Vue.use(AsyncComputed);
 
 Vue.config.productionTip = false;
 
+document.title = "Poleski's Portfolio";
+
 new Vue({
   router,
   render: (h) => h(App),
