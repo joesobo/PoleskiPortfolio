@@ -1,5 +1,9 @@
+???+ ad-tip Info 
+
 Tags:  #🕸️/🟦 #🏷️ #📜️
-Refererences: [[⌨️ General Dev]] [[Keyboard]] 
+References: [[⌨️ General Dev]] [[Keyboard]] 
+
+--- admonition
 
 # Mac Keyboard Shortcuts
 

@@ -1,8 +1,8 @@
 ???+ ad-tip Info
 
-tags: #🕸️/⬜   
-References:  [[gamedev]] [[game]] [[cSharp]] 
-Links: 
+tags: #🕸️/⬜  
+References: [[gamedev]] [[game]] [[cSharp]]
+Links:
 
 --- admonition
 
@@ -11,16 +11,17 @@ Links:
 <br>
 
 # Unity
- 
- Unity is a game engine framework built ontop of the programming language C#
- 
- ---
- 
+
+Unity is a game engine framework built ontop of the programming language C#
+
+---
+
 ### Tool Dev
 
 [[What is a Tool Developer]]
 
 #### Basics
+
 [[Unity Attributes]]
 [[Field Attributes]]
 [[Gizmos]]
@@ -32,11 +33,13 @@ Links:
 [[Serialization]]
 
 #### Concepts
+
 [[Bezier Curves]]
 [[Tool Design Patterns]]
 [[Saving Data between Sessions]]
 
 #### Tooling
+
 [[Custom Inspector]]
 [[Editor GUI & Layout]]
 [[Inspector Field]]
@@ -45,4 +48,5 @@ Links:
 [[UI Events]]
 
 #### Extra
+
 [[Extra Unity Tool Stuff]]

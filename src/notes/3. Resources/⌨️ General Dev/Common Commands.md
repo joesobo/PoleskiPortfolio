@@ -1,7 +1,7 @@
 ???+ ad-tip Info
 
 tags: #🕸️/🟧️   #⚙️   
-Refererences:   
+References:   
 Links: 
 
 --- admonition

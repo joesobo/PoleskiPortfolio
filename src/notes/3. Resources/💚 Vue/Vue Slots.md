@@ -1,12 +1,16 @@
-Tags:  #🕸️/🟦 #🏷️ #📜️ 
-Refererences: [[💚 Vue]] [[Slot]]
+???+ ad-tip Info
+
+Tags: #🕸️/🟦 #🏷️ #📜️
+References: [[💚 Vue]] [[Slot]]
+
+--- admonition
 
 # Slots
 
--   Useful for passing content to a component
--   without a slot tag any extra info is trashed
--   must specify name if using shorthand
-	
+- Useful for passing content to a component
+- without a slot tag any extra info is trashed
+- must specify name if using shorthand
+
 ```jsx
 // parent
 <alertBox>
@@ -18,33 +22,30 @@ Refererences: [[💚 Vue]] [[Slot]]
 <slot></slot>                     // parent body replaces slot element
 ```
 
--   using data in a slot
-    -   slot has access to templates scope
+- using data in a slot
 
-    ```jsx
-    // runs
-    <alertBox>
-    	Error on {{ errorLocation }}
-    </alertBox>
-    ```
-    
-    -   slot has no access to components scope
+  - slot has access to templates scope
 
-    ```jsx
-    // does not run
-    <alertBox error="test error">
-    	Error on {{ errorLocation }}
-    </alertBox> 
-    ```
-    
--   Default - rendered when no content provided
-	
+  ```jsx
+  // runs
+  <alertBox>Error on {{ errorLocation }}</alertBox>
+  ```
+
+  - slot has no access to components scope
+
+  ```jsx
+  // does not run
+  <alertBox error="test error">Error on {{ errorLocation }}</alertBox>
+  ```
+
+- Default - rendered when no content provided
+
 ```jsx
 <slot>Default Text</slot>
 ```
 
--   Named Slots - useful for multiple slots (slot with no name is "default")
-	
+- Named Slots - useful for multiple slots (slot with no name is "default")
+
 ```jsx
 // parent
 <alertBox>
@@ -61,9 +62,9 @@ Refererences: [[💚 Vue]] [[Slot]]
 </div>
 ```
 
--   Scoped Slots - makes item variable available to slot content
-    -   attributes bounded to slot are called slot props
-    	
+- Scoped Slots - makes item variable available to slot content
+  - attributes bounded to slot are called slot props
+
 ```jsx
 // parent
 <alertBox>
@@ -78,16 +79,18 @@ Refererences: [[💚 Vue]] [[Slot]]
 </li>
 ```
 
--   Destructuring Slot Props
+- Destructuring Slot Props
+
 ```jsx
 <alertBox>
-	<template v-slot="{item: todo}">
-		<p>{{ todo }}</p>
-	</template>
+  <template v-slot="{item: todo}">
+    <p>{{ todo }}</p>
+  </template>
 </alertBox>
 ```
 
--   Dynamic Slot Names
+- Dynamic Slot Names
+
 ```jsx
 <alertBox>
 	<template v-slot:[dynamicSlotName]>

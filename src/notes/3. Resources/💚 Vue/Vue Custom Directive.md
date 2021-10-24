@@ -1,5 +1,9 @@
+???+ ad-tip Info
+ 
 Tags: #🕸️/🟦 #🏷️ #📜️ 
 References: [[💚 Vue]]
+
+--- admonition
 
 # Custom Directive
 

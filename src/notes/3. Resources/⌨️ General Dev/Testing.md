@@ -1,10 +1,14 @@
+???+ ad-tip Info 
+
 Tags:  #🕸️/🟦 #🏷️ 
-Refererences: [[⌨️ General Dev]] [[Programming]] [[DX]]    
+References: [[⌨️ General Dev]] [[Programming]] [[DX]]    
 Links:
 - https://sendoso.atlassian.net/wiki/spaces/FE/pages/1400635399/Testing+Best+Practices  
 - https://testing-library.com/docs/vue-testing-library/intro/
 - https://testing-library.com/docs/vue-testing-library/cheatsheet/
 - https://kentcdodds.com/blog/write-tests
+
+--- admonition
 
 <br>
 

@@ -1,11 +1,10 @@
 ???+ ad-tip Info
 
-tags: #🕸️/🟦 #🏷️    
+tags: #🕸️/🟦 #🏷️  
 References: [[Nuxt Modules]]  
 Links: https://nuxtjs.org/docs/directory-structure/modules/#write-your-own-module
 
 --- admonition
-
 
 <br>
 
@@ -31,23 +30,25 @@ The base nuxt module builds off of this core function:
 
 ```jsx
 export default function ExampleModule(moduleOptions) {
-  console.log(moduleOptions.token) // '123'
-  console.log(this.options.exampleMsg) // 'hello'
+  console.log(moduleOptions.token); // '123'
+  console.log(this.options.exampleMsg); // 'hello'
 
-  this.nuxt.hook('ready', async nuxt => {
-    console.log('Nuxt is ready')
-  })
+  this.nuxt.hook("ready", async (nuxt) => {
+    console.log("Nuxt is ready");
+  });
 }
 ```
 
 <br>
 
 #### Module Options
+
 This is the object passed with the module, inside of an array. In the above example it is `token`. The Module options can be accessed via the `moduleOptions` property.
 
 <br>
 
 #### this.options
+
 These build directly off of the nuxt options included in the base config. In the above example it is the `exampleMsg`.
 
 It is especially useful for sharing information between modules.
@@ -55,9 +56,11 @@ It is especially useful for sharing information between modules.
 <br>
 
 #### this.nuxt
+
 This references the actual Nuxt instance, allowing you to create hooks ontop of the existing life cycle events.
 
 These include
+
 - `Ready` - Nuxt ready to work
 - `Error` - Unhandled error in hooks
 - `Close` - Nuxt closing gracefully
@@ -72,10 +75,10 @@ Ex:
 ```jsx
 // plugin.js
 
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
+import Vue from "vue";
+import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 ```
 
 <br>
@@ -83,10 +86,10 @@ Vue.use(BootstrapVue)
 ```jsx
 // module.js
 
-import path from 'path'
+import path from "path";
 
 export default function ExampleModule(moduleOptions) {
-  this.addPlugin(path.resolve(__dirname, 'plugin.js'))
+  this.addPlugin(path.resolve(__dirname, "plugin.js"));
 }
 ```
 
@@ -97,17 +100,18 @@ This can also be used to bind with existing Nuxt Modules, say to create a wrappe
 ```jsx
 // module.js
 
-import path from 'path'
-import i18nPlugin from '@nuxtjs/i18n'
+import path from "path";
+import i18nPlugin from "@nuxtjs/i18n";
 
 export default function ExampleModule(moduleOptions) {
-  this.addModule(i18nPlugin)
+  this.addModule(i18nPlugin);
 }
 ```
 
 <br>
 
 #### Async Modules
+
 If your module needs to access an API or do any asynchronous operations you probably want to use the async modules. These modules return a Promise like standard async / await.
 
 ```jsx

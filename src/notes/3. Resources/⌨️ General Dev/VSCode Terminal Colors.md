@@ -1,7 +1,11 @@
+???+ ad-tip Info
+ 
 Tags:  #🕸️/🟦 #🏷️
-Refererences: [[⌨️ General Dev]] [[VSCode]] [[Color]] [[Terminal]] [[Theme]] [[Setting]] [[Programming]]  
+References: [[⌨️ General Dev]] [[VSCode]] [[Color]] [[Terminal]] [[Theme]] [[Setting]] [[Programming]]  
 Links: 
 - https://glitchbone.github.io/vscode-base16-term/#/darktooth
+
+--- admonition
 
 <br>
 

@@ -1,6 +1,10 @@
+???+ ad-tip Info 
+
 Tags:  #🕸️/🟦 #🏷️ #📜️
-Refererences: [[⌨️ General Dev]] [[Programming]] [[Setting]]
+References: [[⌨️ General Dev]] [[Programming]] [[Setting]]
 Links:  
+
+--- admonition
 
 <br>
 

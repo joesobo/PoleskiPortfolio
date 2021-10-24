@@ -1,11 +1,10 @@
 ???+ ad-tip Info
 
-tags: #🕸️/🟦    
-References: [[Testing]] [[end-to-end]] 
-Links: 
+tags: #🕸️/🟦  
+References: [[Testing]] [[end-to-end]]
+Links:
 
 --- admonition
-
 
 <br>
 
@@ -20,6 +19,7 @@ Comes with Desktop app and CLI tool.
 `npx cypress open` - run cypress and opens the gui (on first time it will generate cypress folder structure)
 
 #### Main folders
+
 - fixtures (common data to use in tests)
 - integration (tests)
 - plugins (external JS tasks)
@@ -27,11 +27,11 @@ Comes with Desktop app and CLI tool.
 
 ### GUI
 
-Shows all of the spec tests files. Any of these files can be run by themselves or as a group. 
+Shows all of the spec tests files. Any of these files can be run by themselves or as a group.
 
 On the right side of the GUI you can see an iframe displaying the UI of your application as it runs through the tests. Everything else is the command log that shows you every test and every command within that test.
 
-The command log allows you to time travel through the tests to easily travel to broken points / debugging. 
+The command log allows you to time travel through the tests to easily travel to broken points / debugging.
 
 It also can display additional information about commands run via the dev tools.
 
@@ -56,13 +56,15 @@ A chaining API that passes a subject through out the chain of commands. For exam
 `cy.location()` - location within the application (like path)
 
 `cy.task()` - executes JS on system outside browser (like clearing db)
+
 - created within the `plugins` folder
-	
+
 `cy.window()` - gets the current window
 
 `cy.server()` - start server to pass request to (required for stubbing)
 
 `cy.route()` - describes response server for server (for mocking)
+
 - can be used for testing error scenarios in routes for better testing coverage
 
 `cy.wait()` - waits for response from request to server
@@ -76,7 +78,7 @@ Custom commands should be created within the `support` folder
 ```js
 Cypress.Commands.add('login', (email, pass) => {
 	...
-	cy.get(...)	
+	cy.get(...)
 	cy.get('button').click()
 })
 ```
@@ -95,15 +97,17 @@ Cant just run the Cypress desktop app.
 Headless Mode (run through command line)
 
 `npx cypress run`
- - creates run video recording for reviewing
 
-Can be run with `--parallel` flag to optimize distribution of test files to enable parallelization. 
+- creates run video recording for reviewing
+
+Can be run with `--parallel` flag to optimize distribution of test files to enable parallelization.
 
 ### Dashboard
 
 Optional service to record results of test runs for collaborating as a team. Free for open source projects.
 
 Shows:
+
 - test number
 - date
 - time taken

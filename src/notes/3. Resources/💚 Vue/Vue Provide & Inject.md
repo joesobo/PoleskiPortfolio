@@ -1,5 +1,9 @@
-Tags:  #🕸️/🟦 #🏷️ #📜️ 
+???+ ad-tip Info
+
+Tags: #🕸️/🟦 #🏷️ #📜️
 References: [[💚 Vue]] [[Provide]] [[Inject]]
+
+--- admonition
 
 # Provide / Inject
 
@@ -8,17 +12,14 @@ References: [[💚 Vue]] [[Provide]] [[Inject]]
 - [[#Advanced|Advanced]]
 - [[#Reactivity|Reactivity]]
 
-
 ### Notes
 
--   used for passing data from parent to deeply nested child (like a _long range prop_)
-    
-    ![https://v3.vuejs.org/images/components_provide.png](https://v3.vuejs.org/images/components_provide.png)
-    
--   parent component acts as dependency `provider` to all children (any depth)
--   child has access to `inject` option to start using data
-    
+- used for passing data from parent to deeply nested child (like a _long range prop_)
 
+  ![https://v3.vuejs.org/images/components_provide.png](https://v3.vuejs.org/images/components_provide.png)
+
+- parent component acts as dependency `provider` to all children (any depth)
+- child has access to `inject` option to start using data
 
 ### Simple
 
@@ -26,7 +27,7 @@ Parent provider
 
 ```jsx
 provide: {
-	user: 'Test User'
+  user: "Test User";
 }
 ```
 
@@ -38,7 +39,6 @@ created() {
 	console.log(this.user);
 }
 ```
-
 
 ### Advanced
 
@@ -66,8 +66,8 @@ created() {
 
 ### Reactivity
 
--   provide / inject are not reactive by default
-	
+- provide / inject are not reactive by default
+
 ```jsx
 provide() {
 	return {

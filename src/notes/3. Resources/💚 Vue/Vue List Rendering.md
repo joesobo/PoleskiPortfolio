@@ -1,38 +1,44 @@
-Tags:  #🕸️/🟦 #🏷️ #📜️  
+???+ ad-tip Info
+
+Tags: #🕸️/🟦 #🏷️ #📜️  
 References: [[💚 Vue]] [[List]]
+
+--- admonition
 
 # List Rendering
 
--   v-for
-	
+- v-for
+
 ```jsx
 <li v-for="item in items">{{ item }}</li>
 
-or 
+or
 
 <li v-for="item of items">{{ item }}</li>
 ```
 
--   v-for with index
-	
+- v-for with index
+
 ```jsx
-<li v-for="(item, index) in items">{{ index }} - {{ item }}</li>
+<li v-for="(item, index) in items">
+  {{ index }} - {{ item }}
+</li>
 ```
 
--   v-for with object
-	
+- v-for with object
+
 ```jsx
 <li v-for="value in object">{{ value }}</li>
 ```
 
--   Maintain state - gives Vue a hint to track elements identity (key must be unique)
-	
+- Maintain state - gives Vue a hint to track elements identity (key must be unique)
+
 ```jsx
 <li v-for="item in items" :key="item.id">{{ item }}</li>
 ```
 
--   filtered rendering
-	
+- filtered rendering
+
 ```jsx
 <li v-for="n in evenNums" :key="n">{{ n }}</li>
 
@@ -43,8 +49,8 @@ computed: {
 }
 ```
 
--   range
-	
+- range
+
 ```jsx
 <li v-for="n in 10" :key="n">{{ n }}</li>
 ```

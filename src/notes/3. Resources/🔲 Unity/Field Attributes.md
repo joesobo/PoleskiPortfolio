@@ -1,11 +1,10 @@
 ???+ ad-tip Info
 
-tags: #🕸️/🟦    
-References:  [[🔲 Unity]] 
-Links: 
+tags: #🕸️/🟦  
+References: [[🔲 Unity]]
+Links:
 
 --- admonition
-
 
 <br>
 

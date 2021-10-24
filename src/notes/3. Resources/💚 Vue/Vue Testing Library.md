@@ -1,7 +1,7 @@
 ???+ ad-tip Info
 
 tags: #🕸️/🟦 #🏷️ #📜️   
-Refererences: [[Testing]] [[💚 Vue]] [[Library]] 
+References: [[Testing]] [[💚 Vue]] [[Library]] 
 Links: 
 
 --- admonition

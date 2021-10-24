@@ -1,11 +1,10 @@
 ???+ ad-tip Info
 
-tags: #🕸️/🟦    
-References:  [[🔲 Unity]] 
-Links: 
+tags: #🕸️/🟦  
+References: [[🔲 Unity]]
+Links:
 
 --- admonition
-
 
 <br>
 
@@ -22,13 +21,13 @@ void OnDrawGizmos() {
 	Vector3 end = fish.transform.position;
 	float halfHeight = (start.y - end.y) * 0.5f;
 	Vector3 offset = Vector3.up * halfHeight;
-	
+
 	Handles.DrawBezier(
-		start, 
-		end, 
-		start - offset, 
-		end + offset, 
-		Color.white, 
+		start,
+		end,
+		start - offset,
+		end + offset,
+		Color.white,
 		EditorGUIUtilty.whiteTexture,
 		1f
 	);

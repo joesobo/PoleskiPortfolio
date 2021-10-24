@@ -1,11 +1,10 @@
 ???+ ad-tip Info
 
-tags: #🕸️/🟦    
-References:  [[🔲 Unity]] 
-Links: 
+tags: #🕸️/🟦  
+References: [[🔲 Unity]]
+Links:
 
 --- admonition
-
 
 <br>
 
@@ -23,7 +22,7 @@ void Awake() {
 	// Creates a duplicate of the *asset* ❌ (not good)
 	GetComponent<MeshRenderer>().material.color = Color.red;
 	GetComponent<MeshFilter>().mesh = newMesh;
-	
+
 	// The actual *asset* ✅ (good)
 	GetComponent<MeshRenderer>().sharedMaterial.color = Color.red;
 	GetComponent<MeshFilter>().sharedMesh = newMesh;
@@ -37,12 +36,12 @@ How to create assets in editor mode without leaking using `HideFlags`
 ```cs
 void Awake() {
 	Shader shader = Shader.Find("Default/Diffuse");
-	
+
 	Material mat = new Material(shader);
 	mat.hideFlags = HideFlags.HideAndDontSave;
-	
+
 	or
-		
+
 	Material mat = new Material(shader) { hideFlags = HideFlags.HideAndDontSave };
 }
 ```
@@ -75,7 +74,7 @@ void ApplyColor() {
 	MeshRender rnd = GetComponent<MeshRenderer>();
 	Mpb.SetColor(shPropColor, color);
 	rnd.SetPropertyBlock(Mpb);
-	
+
 	// Old bad version (for reference)
 	// rnd.material.SetColor(shPropColor, color);
 }

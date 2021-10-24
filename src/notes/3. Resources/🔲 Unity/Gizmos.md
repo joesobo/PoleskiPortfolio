@@ -1,11 +1,10 @@
 ???+ ad-tip Info
 
-tags: #🕸️/🟦    
+tags: #🕸️/🟦  
 References: [[🔲 Unity]]  
-Links: 
+Links:
 
 --- admonition
-
 
 <br>
 
@@ -36,4 +35,3 @@ void OnDrawGizmos() {
 	}
 }
 ```
-
