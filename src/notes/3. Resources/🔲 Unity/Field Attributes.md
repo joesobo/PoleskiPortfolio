@@ -27,3 +27,4 @@ This displays information to the user, but is also very open ended and doesn't h
 #### Attributes
 
 - `Range(start, end)` - Sets a field to be a slider between start and end point
+- `[SerializeField]` - Serialize
