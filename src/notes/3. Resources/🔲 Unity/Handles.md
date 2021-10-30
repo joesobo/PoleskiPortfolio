@@ -36,3 +36,8 @@ void OnDrawGizmos() {
 
 - `DrawAAPolyLine(start, end)`
 - `DrawBezier(start, end, startTanget, endTangent, color, texture, width)`
+- `DrawWireDisc(center, diskNormal, radius)`
+
+##### Handles Options
+
+-`color`
