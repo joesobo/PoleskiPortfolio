@@ -66,18 +66,18 @@ export default {
   justify-content: flex-end;
   align-items: center;
   width: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 .buttons {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   margin-left: 20px;
 }
 
 .border {
   border: 1px solid var(--border);
   height: 0px;
-  width: 200px;
+  width: 150px;
   transform: rotate(90deg);
 }
 

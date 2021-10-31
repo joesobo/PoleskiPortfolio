@@ -19,7 +19,6 @@ export default {};
 
 <style scoped>
 footer {
-  padding-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;

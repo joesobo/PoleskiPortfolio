@@ -31,7 +31,7 @@ export default {
   justify-content: flex-end;
   align-items: center;
   background-color: var(--background);
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 a {
@@ -41,15 +41,15 @@ a {
   color: var(--text);
   line-height: 100px;
   transform: rotate(90deg);
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   margin-top: 125px;
 }
 
 .border {
   border: 1px solid var(--border);
   height: 0px;
-  margin-top: 52px;
-  width: 200px;
+  margin-top: 50px;
+  width: 150px;
   transform: rotate(90deg);
 }
 
