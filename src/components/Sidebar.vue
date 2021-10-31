@@ -9,15 +9,6 @@
 
     <hr />
 
-    <h2>Languages</h2>
-    <ul>
-      <li>Javascript</li>
-      <li>Typescript</li>
-      <li>C#</li>
-    </ul>
-
-    <hr />
-
     <h2>Work</h2>
     <ul>
       <li>Sendoso (current)</li>
@@ -28,6 +19,42 @@
       target="_blank"
       >Download my resume!</a
     >
+
+    <hr />
+
+    <h2>Languages</h2>
+    <ul>
+      <div class="row align-center">
+        <div class="languageColor" style="background-color: #efd81d" />
+        <div class="language">Javascript</div>
+      </div>
+      <div class="row align-center">
+        <div class="languageColor" style="background-color: #2f74c0" />
+        <div class="language">Typescript</div>
+      </div>
+      <div class="row align-center">
+        <div class="languageColor" style="background-color: #9a6cd1" />
+        <div class="language">C#</div>
+      </div>
+    </ul>
+
+    <hr />
+
+    <h2>Frameworks</h2>
+    <ul>
+      <div class="row align-center">
+        <div class="languageColor" style="background-color: #40b681" />
+        <div class="language">Vue</div>
+      </div>
+      <div class="row align-center">
+        <div class="languageColor" style="background-color: #5ed3f3" />
+        <div class="language">React</div>
+      </div>
+      <div class="row align-center">
+        <div class="languageColor" style="background-color: #ffffff" />
+        <div class="language">Unity</div>
+      </div>
+    </ul>
 
     <hr />
   </div>
@@ -66,6 +93,7 @@ h1 {
 h2 {
   font-size: 22px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 h3 {
@@ -86,5 +114,20 @@ p {
 a {
   margin-top: 32px;
   color: var(--accent);
+}
+
+.languageColor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.language {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 16px;
+  margin-top: 8px;
 }
 </style>

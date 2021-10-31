@@ -30,6 +30,10 @@ html {
   justify-content: center;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .spaced {
   justify-content: space-between;
 }
