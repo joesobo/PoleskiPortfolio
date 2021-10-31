@@ -1,8 +1,10 @@
 <template>
   <div class="projects">
-    <div class="search">search area</div>
-    <div v-for="project in projects" :key="project.title">
-      <Project :project="project" />
+    <!-- <div class="search">search area</div> -->
+    <div class="project-list">
+      <div v-for="project in projects" :key="project.title">
+        <Project :project="project" />
+      </div>
     </div>
   </div>
 </template>
@@ -95,5 +97,9 @@ export default Vue.extend({
 <style scoped>
 .search {
   margin: 32px;
+}
+
+.project-list {
+  margin-top: 32px;
 }
 </style>
