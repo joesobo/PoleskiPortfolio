@@ -8,7 +8,7 @@ Workout: ✅❌
 Addiction: ✅❌
 WalkDog: ✅❌
 Journal: ✅❌
-Mood: ☺️😄😐😶🙄🤷‍♂️😞😢😠😬
+Mood: ☺️😄😐😶🙄😞😢😠😬😀
 
 ---
 tags: #🕸️/🟩️
