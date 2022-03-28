@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️  
-References: [[🖥️ Web Dev]] [[Ruby]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️  
+> References: [[🖥️ Web Dev]] [[Ruby]]
 
---- admonition
 
 # Webpacker Cheatsheet
 

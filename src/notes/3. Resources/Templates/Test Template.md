@@ -1,8 +1,8 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟧️
+> [!INFO]
+> 
+> tags:  #🕸️/🟧️
 
---- admonition
 
 <iframe src="https://6146a62b22390.htmlsave.net" frameborder=0 style="width:100%"></iframe>
 
@@ -14,4 +14,4 @@ for (let page of dv.pages('"FOLDER PATH HERE"')
 }
 ```
 
-`$= dv.current().file.name`
+`= this.file.name`

@@ -2,19 +2,15 @@
 banner: 3. Resources/🖼️ Images/NuxtJS.png
 ---
 
-<br>
 
-???+ ad-tip Info
+> [!INFO]
+> 
+> tags:  #🕸️/⬜ #🗺️  
+> References: [[💚 Vue]]  
+> Links: https://nuxtjs.org/
 
-tags: #🕸️/⬜ #🗺️  
-References: [[💚 Vue]]  
-Links: https://nuxtjs.org/
 
---- admonition
-
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Nuxt is a framework for Vue, which itself is a framework for Javascript. It is an open source project that aims to make Vue development even easier.
 

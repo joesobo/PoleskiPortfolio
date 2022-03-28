@@ -1,9 +1,11 @@
 ???+ ad-tip Info
  
-Tags: #🕸️/🟦 #🏷️ #📜️ 
-References: [[💚 Vue]] [[Events]]
 
---- admonition
+> [!INFO]
+> 
+> Tags: #🕸️/🟦 #🏷️ #📜️ 
+> References: [[💚 Vue]] [[Events]]
+
 
 # Custom Events
 

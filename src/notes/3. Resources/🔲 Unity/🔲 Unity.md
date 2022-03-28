@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/⬜  
-References: [[gamedev]] [[game]] [[cSharp]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/⬜  
+> References: [[gamedev]] [[game]] [[cSharp]]
+> Links:
 
---- admonition
 
 ![[Pasted image 20211009134021.png]]
-
-<br>
 
 # Unity
 

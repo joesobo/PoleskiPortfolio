@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦 #🏷️  
-References: [[Nuxt Modules]]  
-Links: https://nuxtjs.org/docs/directory-structure/modules/#write-your-own-module
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️  
+> References: [[Nuxt Modules]]  
+> Links: https://nuxtjs.org/docs/directory-structure/modules/#write-your-own-module
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 A Nuxt Module is just a simple function.
 
@@ -39,21 +37,15 @@ export default function ExampleModule(moduleOptions) {
 }
 ```
 
-<br>
-
 #### Module Options
 
 This is the object passed with the module, inside of an array. In the above example it is `token`. The Module options can be accessed via the `moduleOptions` property.
-
-<br>
 
 #### this.options
 
 These build directly off of the nuxt options included in the base config. In the above example it is the `exampleMsg`.
 
 It is especially useful for sharing information between modules.
-
-<br>
 
 #### this.nuxt
 
@@ -81,8 +73,6 @@ import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 Vue.use(BootstrapVue);
 ```
 
-<br>
-
 ```jsx
 // module.js
 
@@ -107,8 +97,6 @@ export default function ExampleModule(moduleOptions) {
   this.addModule(i18nPlugin);
 }
 ```
-
-<br>
 
 #### Async Modules
 

@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️  
-References: [[💚 Vue]] [[List]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️  
+> References: [[💚 Vue]] [[List]]
 
---- admonition
 
 # List Rendering
 

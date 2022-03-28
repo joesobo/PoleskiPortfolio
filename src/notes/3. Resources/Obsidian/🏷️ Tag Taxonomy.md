@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟧️ #⚙️
-References: [[Obsidian]] [[Tool]] [[Methods]]  
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟧️ #⚙️
+> References: [[Obsidian]] [[Tool]] [[Methods]]  
+> Links:
 
---- admonition
 
-<br>
-
-## `$= dv.current().file.name`
+## `= this.file.name`
 
 #📥️ Seed box | Items that I am / will be actively working on  
 #🌱️ Seedlings | Distilled from literature notes  

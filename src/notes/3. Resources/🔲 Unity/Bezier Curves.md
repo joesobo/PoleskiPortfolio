@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References: [[🔲 Unity]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References: [[🔲 Unity]]
+> Links:
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 `DrawBezier(start, end, startTanget, endTangent, color, texture, width)`
 

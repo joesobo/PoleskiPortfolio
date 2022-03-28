@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦    
-References: [[Storybook]] [[documentation]] 
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦    
+> References: [[Storybook]] [[documentation]] 
+> Links: 
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 - Storybook Addons:
 			- [links](https://storybook.js.org/addons/@storybook/addon-links)

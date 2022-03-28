@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️
-References: [[💚 Vue]] [[Slot]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️
+> References: [[💚 Vue]] [[Slot]]
 
---- admonition
 
 # Slots
 

@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References: [[🔲 Unity]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References: [[🔲 Unity]]
+> Links:
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 `Material` give the appearance of an object.
 `Meshes` give the shape of an object.
@@ -45,8 +43,6 @@ void Awake() {
 	Material mat = new Material(shader) { hideFlags = HideFlags.HideAndDontSave };
 }
 ```
-
-<br>
 
 #### Best Method
 

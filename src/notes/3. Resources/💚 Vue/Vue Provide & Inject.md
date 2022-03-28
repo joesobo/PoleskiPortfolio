@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️
-References: [[💚 Vue]] [[Provide]] [[Inject]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️
+> References: [[💚 Vue]] [[Provide]] [[Inject]]
 
---- admonition
 
 # Provide / Inject
 

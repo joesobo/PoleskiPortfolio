@@ -1,10 +1,10 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟧️
+> [!INFO]
+> 
+> tags:  #🕸️/🟧️
 
---- admonition
 
-### `$= dv.current().file.name`
+### `= this.file.name`
 
 ```dataview
 table file.ctime as Date from "3. Resources/Obsidian"

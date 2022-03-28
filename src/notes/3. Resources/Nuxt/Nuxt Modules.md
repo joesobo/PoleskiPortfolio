@@ -1,26 +1,20 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦 #🏷️  
-References: [[Nuxt]]  
-Links: https://modules.nuxtjs.org/
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️  
+> References: [[Nuxt]]  
+> Links: https://modules.nuxtjs.org/
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Nuxt Modules are a package like system that make it possible to extend the core functionality of Nuxt. They are basically functions that are called when Nuxt first starts. These functions can access Nuxt's options, [[Hooks]] or lifecycle methods, and run asynchronously.
 
 There is a [list of all the public Nuxt modules](https://modules.nuxtjs.org/) that you can use to easily integrate features into your application. These include modules like eslint, typescript support, and svg loading. There are currently over **160** modules.
 
-<br>
-
 #### How Modules Work:
 
 ![[Nuxt Modules.png]]
-
-<br>
 
 #### <hr>
 
@@ -29,8 +23,6 @@ There is a [list of all the public Nuxt modules](https://modules.nuxtjs.org/) th
 Modules are the main source of interaction with the Nuxt framework. If you need to make modifications to Nuxt, it will likely be as a normal module.
 
 BuildModules are for developer dependency type stuff. This is stuff that the client will never see, but is useful for development.
-
-<br>
 
 #### Modules vs. Plugins
 

@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References: [[🔲 Unity]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References: [[🔲 Unity]]
+> Links:
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 This is an object that managers and controls the state of a large group of sub-objects. For example you could have a fish manager which spawns and destroys a school of fish.
 

@@ -1,12 +1,10 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References: [[🔲 Unity]] [[documentation]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References: [[🔲 Unity]] [[documentation]]
+> Links:
 
---- admonition
-
-<br>
 
 # What is a Tool Developer?
 

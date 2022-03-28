@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️
-References: [[💚 Vue]] [[Properties]] [[Methods]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️
+> References: [[💚 Vue]] [[Properties]] [[Methods]]
 
---- admonition
 
 # Properties and Methods
 

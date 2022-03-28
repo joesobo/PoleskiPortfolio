@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References: [[Testing]] [[end-to-end]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References: [[Testing]] [[end-to-end]]
+> Links:
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 A tool for reliably testing anything that runs in a web browser. Primarily used for end-to-end testing.
 

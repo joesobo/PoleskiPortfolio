@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References: [[🔲 Unity]]  
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References: [[🔲 Unity]]  
+> Links:
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 If we want to visualize in the Scene View we use Gizmos. Gizmos are just editor visualization to help game designers see the background logic.
 

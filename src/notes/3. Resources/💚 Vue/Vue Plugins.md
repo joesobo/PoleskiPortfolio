@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️
-References: [[💚 Vue]] [[Plugin]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️
+> References: [[💚 Vue]] [[Plugin]]
 
---- admonition
 
 # Plugins
 

@@ -1,15 +1,13 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦   
-References:  [[🔲 Unity]]
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦   
+> References:  [[🔲 Unity]]
+> Links: 
 
---- admonition
 
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Create a custom inspector editor for your ScriptableObjects. Allows you to modify how it looks and background functionality. 
 

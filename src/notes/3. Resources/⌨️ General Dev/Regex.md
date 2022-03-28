@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References:  [[⌨️ General Dev]]
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References:  [[⌨️ General Dev]]
+> Links:
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Regex is primarily for finding patterns in text. Use this site to test https://regex101.com/
 

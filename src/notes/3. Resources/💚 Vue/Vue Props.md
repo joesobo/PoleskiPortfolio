@@ -1,9 +1,9 @@
-???+ ad-tip Info
 
-Tags: #🕸️/🟦 #🏷️ #📜️
-References: [[💚 Vue]] [[Props]]
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️
+> References: [[💚 Vue]] [[Props]]
 
---- admonition
 
 # Props
 

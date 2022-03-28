@@ -1,14 +1,14 @@
 ???+ ad-tip Info 
 
-Tags:  #🕸️/🟦 #🏷️ #📜️
-References: [[⌨️ General Dev]] [[Programming]] [[Setting]]
-Links:  
 
---- admonition
+> [!INFO]
+> 
+> Tags:  #🕸️/🟦 #🏷️ #📜️
+> References: [[⌨️ General Dev]] [[Programming]] [[Setting]]
+> Links:  
 
-<br>
 
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 All created packages should come with a specific package number to notify users of the version.  
 Package number ex: `"^0.0.0"`

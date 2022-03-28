@@ -1,15 +1,13 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  #⚙️ 
-References:  [[⌨️ General Dev]]
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  #⚙️ 
+> References:  [[⌨️ General Dev]]
+> Links: 
 
---- admonition
 
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 ### Practice
 [https://www.shortcutfoo.com/]("https://www.shortcutfoo.com/")
@@ -18,8 +16,6 @@ Links:
 #### General Shortcuts
 Shortcuts the can be applied no matter the platform and are dependant on the application
 
-<br>
-
 ##### VSCode Shortcuts
 
 ##### Obsidian Shortcuts
@@ -27,8 +23,6 @@ Shortcuts the can be applied no matter the platform and are dependant on the app
 
 #### Windows Shortcuts
 Windows only shortcuts
-
-<br>
 
 ##### PowerToys
 `CTRL + ⇧ + C` - Color Picker
@@ -46,12 +40,8 @@ Windows only shortcuts
 	
 `CTRL + ⇧ + /` - Shortcut guide
 
-<br>
-
 #### [[Mac Keyboard Shortcuts]]
 Mac only shortcuts
-
-<br>
 
 Shortcut
 
@@ -146,7 +136,5 @@ Shortcut
 `⌘2` - Unfold all heading and lists
 
 `⌘F1` - Reveal active file in navigation
-
-<br>
 
 `⌘K⌘K` - Open devdocs on highlighted

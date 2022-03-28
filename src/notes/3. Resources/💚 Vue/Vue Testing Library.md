@@ -1,19 +1,15 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦 #🏷️ #📜️   
-References: [[Testing]] [[💚 Vue]] [[Library]] 
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️   
+> References: [[Testing]] [[💚 Vue]] [[Library]] 
+> Links: 
 
---- admonition
 
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Based on library: https://testing-library.com/
-
-<br>
 
 ### Custom Query
 

@@ -1,7 +1,7 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟧️
+> [!INFO]
+> 
+> tags:  #🕸️/🟧️
 
---- admonition
 
-### `$= dv.current().file.name`
+### `= this.file.name`

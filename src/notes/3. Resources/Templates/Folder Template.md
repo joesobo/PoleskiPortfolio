@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟧️  
-References:   
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟧️   
+> References:   
+> Links: 
 
---- admonition
 
-<br>
-
-### `$= dv.current().file.name`
+### `= this.file.name`
  
 ```dataview
 table file.ctime as Date from "FOLDER PATH HERE"

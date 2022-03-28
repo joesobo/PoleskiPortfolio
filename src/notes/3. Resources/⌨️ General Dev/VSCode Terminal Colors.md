@@ -1,15 +1,15 @@
 ???+ ad-tip Info
  
-Tags:  #🕸️/🟦 #🏷️
-References: [[⌨️ General Dev]] [[VSCode]] [[Color]] [[Terminal]] [[Theme]] [[Setting]] [[Programming]]  
-Links: 
+
+> [!INFO]
+> 
+> Tags:  #🕸️/🟦 #🏷️
+> References: [[⌨️ General Dev]] [[VSCode]] [[Color]] [[Terminal]] [[Theme]] [[Setting]] [[Programming]]  
+> Links: 
 - https://glitchbone.github.io/vscode-base16-term/#/darktooth
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Adds the ability to change the theme of the terminal inside of vscode.
 

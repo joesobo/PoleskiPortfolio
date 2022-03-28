@@ -1,15 +1,13 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  
-References:  [[🔲 Unity]]
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  
+> References:  [[🔲 Unity]]
+> Links: 
 
---- admonition
 
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 A ScriptableObject is an asset that acts as a data container for large amounts of *common* information
 

@@ -1,14 +1,12 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦 #🏷️  
-References: [[Nuxt]]  
-Links: https://nuxtjs.org/docs/directory-structure/plugins/
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️  
+> References: [[Nuxt]]  
+> Links: https://nuxtjs.org/docs/directory-structure/plugins/
 
---- admonition
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 A Nuxt Plugin allows you to inject functions or values, and use Vue or external plugins in a Nuxt application.
 

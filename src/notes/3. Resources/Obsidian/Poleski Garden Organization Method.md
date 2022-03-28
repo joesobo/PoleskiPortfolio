@@ -1,18 +1,14 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦 #🏷️ #📜️  
-References: [[Obsidian]] [[PARA]] [[Productivity]]  
-Links:
+> [!INFO]
+> 
+> tags:  #🕸️/🟦 #🏷️ #📜️  
+> References: [[Obsidian]] [[PARA]] [[Productivity]]  
+> Links:
 
---- admonition
 
 ![[PARA Definitions.png]]
 
-<br>
-
-# `$= dv.current().file.name`
-
-<br>
+# `= this.file.name`
 
 - [[#The Method|The Method]]
 - [[#Getting Started|Getting Started]]
@@ -20,8 +16,6 @@ Links:
 - [[2. Areas]]
 - [[3. Resources]]
 - [[4. Archive]]
-
-<br>
 
 ## The Method
 
@@ -34,13 +28,9 @@ This system of organizing notes is strongly influenced by the [[PARA]] method. I
 
 These group of notes are ever changing, and are likely to undergo another large refactor before im truly (if ever) done.
 
-<br>
-
 ### Getting Started
 
 The first element of note is the [[🌱 Seed Box]], where all notes begin. Feel free to start with notes in this section so that you don't have to immedietly worry about organization and linking.
-
-<br>
 
 ### [[1. Projects]]
 
@@ -53,8 +43,6 @@ All projects should be contained within their own folder. `Ctrl + Click` to make
 - Remember to include a link to the folder project in [[1. Projects]]
 ```
 
-<br>
-
 ### [[2. Areas]]
 
 This section contains all of the areas of your life that you feel are important to you. It is an _area_ that you would like to uphold and maintain.
@@ -63,8 +51,6 @@ The difference between areas and projects is that the areas have no definitive d
 
 It is recommended to use this [[Folder Template|template]] when starting a new area.
 
-<br>
-
 ### [[3. Resources]]
 
 This section is similar to areas in that it contains broad categories of lots of documents. The difference though is that while areas are things that relate directly to you, the resources should be a place for information that you would be comfortable sharing with others.
@@ -72,8 +58,6 @@ This section is similar to areas in that it contains broad categories of lots of
 Consider this as a public repository that other people could look in at any time. If you would feel fine with someone seeing the contents of the document, then consider adding it to an appropriate area.
 
 Don't blindly add stuff to this category, however. This folder should still contain topics that you are interested in, but maybe don't have an obligation to uphold.
-
-<br>
 
 ### [[4. Archive]]
 

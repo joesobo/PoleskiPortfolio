@@ -1,15 +1,13 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦  #⚙️ 
-References:  [[⌨️ General Dev]]  
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦  #⚙️ 
+> References:  [[⌨️ General Dev]]  
+> Links: 
 
---- admonition
 
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 ### `SNIPPET COMMAND`
 

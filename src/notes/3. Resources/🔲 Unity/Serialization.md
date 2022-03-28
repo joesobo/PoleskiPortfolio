@@ -1,15 +1,13 @@
-???+ ad-tip Info
 
-tags: #🕸️/🟦    
-References:  [[🔲 Unity]] 
-Links: 
+> [!INFO]
+> 
+> tags:  #🕸️/🟦    
+> References:  [[🔲 Unity]] 
+> Links: 
 
---- admonition
 
 
-<br>
-
-# `$= dv.current().file.name`
+# `= this.file.name`
 
 Serialization is the process of transforming info for storage by Unity. Helps information be persistent between assembly reloads (restarting Unity).
 
