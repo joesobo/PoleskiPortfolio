@@ -13,8 +13,7 @@ tags: #🕸️/🟩️
 
 # Habits
 - [ ] Exercise
-- [ ] Read
-- [ ] Study
+- [ ] Work
 
 # Vices
 - [ ] Alcohol
