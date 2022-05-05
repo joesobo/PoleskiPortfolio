@@ -1,5 +1,5 @@
 ---
-banner: 3. Resources/🖼️ Images/Vue Logo.png
+banner: "3. Resources/🖼️ Images/Vue Logo.png"
 ---
 
 
