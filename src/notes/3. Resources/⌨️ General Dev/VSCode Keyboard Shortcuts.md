@@ -11,6 +11,7 @@
 Keyboard shortcuts for the IDE VSCode
 
 ## Mac
+
 ### General
 | Keyboard Shortcut   | Command              |
 | ------------------- | -------------------- |
@@ -45,34 +46,82 @@ Keyboard shortcuts for the IDE VSCode
 | `Shift + Z`                 | Toggle word wrap            | 
 
 ### Multi-cursor & Selection
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut                        | Command                                     |
+| ---------------------------------------- | ------------------------------------------- |
+| `Option + Click`                         | Insert cursor                               |
+| `Option + CMD + Up/Down`                 | Insert cursor above/below                   |
+| `CMD + U`                                | Undo last cursor operation                  |
+| `Shift + Option + I`                     | Insert cursor at end of lines selected      |
+| `CMD + L`                                | Select current line                         |
+| `Shift + CMD + L`                        | Select all occurrences of current selection |
+| `CMD + F2`                               | Select all occurrences of current word      |
+| `Control + Shift + Option + Left/Right`  | Expand / Shrink selection                   |
+| `Shift + Option + Drag Mouse`            | Column selection                            |
+| `Shift + Option + CMD + Up/Down`         | Column select up/down                       |
+| `Shift + Option + CMD + Left/Right`      | Column select left/right                    |
+| `Shift + Option + CMD + PageUp/PageDown` | Column select page up/down                  | 
 
 ### Search & Replace
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut   | Command                                |
+| ------------------- | -------------------------------------- |
+| `CMD + F`           | Find                                   |
+| `Option + CMD + F`  | Replace                                |
+| `(Shift) + CMD + G` | Find next (previous)                   |
+| `Option + Enter`    | Select all occurrences of find match   |
+| `CMD + D`           | Add selection to next find match       |
+| `CMD + K + CMD + D` | Move last selection to next find match | 
 
 ### Rich Language Editing
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut     | Command                  |
+| --------------------- | ------------------------ |
+| `Control + Space`     | Trigger suggestion       |
+| `CMD + I`             | Trigger suggestion       |
+| `Shift + CMD + Space` | Trigger parameter hints  |
+| `Shift + Option + F`  | Format document          |
+| `CMD + K + CMD + F`   | Format selection         |
+| `F12`                 | Go to definition         |
+| `Option + F12`        | Peek definition          |
+| `CMD + K + F12`       | Open definition in side  |
+| `CMD + .`             | Quick fix                |
+| `Shift + F12`         | Show references          |
+| `F2`                  | Rename symbol            |
+| `CMD + K + CMD + X`   | Trim trailing whitespace |
+| `CMD + K + M`         | Change file language     | 
 
 ### Navigation
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut       | Command                               |
+| ----------------------- | ------------------------------------- |
+| `CMD + T`               | Show all symbols                      |
+| `Control + G`           | Go to line                            |
+| `CMD + P`               | Go to file                            |
+| `Shift + CMD + O`       | Go to symbol                          |
+| `Shift + CMD + M`       | Show problems panel                   |
+| `(Shift) + F8`          | Go to (previous) next error / warning |
+| `Control + Shift + Tab` | Navigate editor group history         |
+| `Control + (Shift) + -` | Go backward (forward)                 |
+| `Control + Shift + M`   | Toggle tab moves focus                | 
 
 ### Editor Management
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut                    | Command                             |
+| ------------------------------------ | ----------------------------------- |
+| `CMD + W`                            | Close editor                        |
+| `CMD + K + F`                        | Close folder                        |
+| `CMD + \`                            | Split editor                        |
+| `CMD + 1 / 2 / 3`                    | Focus on 1st, 2nd, 3rd editor group |
+| `CMD + K + CMD + Left/Right`         | Focus on previous/next editor group |
+| `CMD + K + SHIFT + CMD + Left/Right` | Move editor left/right              |
+| `CMD + K + Left/Right`               | Move active editor group            | 
 
 ### File Management
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut   | Command    |
+| ------------------- | ---------- |
+| `CMD + N`           | New file   |
+| `CMD + O`           | Open file  |
+| `CMD + S`           | Save       |
+| `Shift + CMD + S`   | Save as... |
+| `Option + CMD + S`  | Save all   |
+| `CMD + W`           | Close      |
+| `CMD + K + CMD + W` | Close all  | 
 
 ### Display
 | Keyboard Shortcut | Command |
