@@ -124,16 +124,40 @@ Keyboard shortcuts for the IDE VSCode
 | `CMD + K + CMD + W` | Close all  | 
 
 ### Display
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut     | Command                        |
+| --------------------- | ------------------------------ |
+| `Control + CMD + F`   | Toggle full screen             |
+| `Option + CMD + 0`    | Toggle editor layout           |
+| `(Shift) + CMD + =`   | Zoom in/(out)                  |
+| `CMD + B`             | Toggle sidebar visibility      |
+| `Shift + CMD + E`     | Show explorer                  |
+| `Shift + CMD + F`     | Show search                    |
+| `Control + Shift + G` | Show source control            |
+| `Shift + CMD + D`     | Show debug                     |
+| `Shift + CMD + X`     | Show extensions                |
+| `Shift + CMD + H`     | Replace in files               |
+| `Shift + CMD + J`     | Toggle search details          |
+| `Shift + CMD + U`     | Show output panel              |
+| `Shift + CMD + V`     | Open markdown preview          |
+| `Shift + K + V`       | Open markdown preview to side  |
+| `CMD + K + Z`         | Zen Mode (`Esc + Esc` to exit) | 
 
 ### Debug
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut   | Command           |
+| ------------------- | ----------------- |
+| `F9`                | Toggle breakpoint |
+| `F5`                | Start/Continue    |
+| `(Shift) + F11`     | Step into/(out)   |
+| `F10`               | Step over         |
+| `Shift + F5`        | Stop              |
+| `CMD + K + CMD + I` | Show hover        | 
 
 ### Integrated Terminal
-| Keyboard Shortcut | Command |
-| ----------------- | ------- |
-|                   |         |
+| Keyboard Shortcut        | Command                  |
+| ------------------------ | ------------------------ |
+| ``Control + ` ``         | Show integrated terminal |
+| ``Control + Shift + ` `` | Create new terminal      |
+| `CMD + C`                | Cop selection            |
+| `CMD + Up/Down`          | Scroll up/down           |
+| `PageUp/PageDown`        | Scroll page up/down      |
+| `CMD + Home / End`       | Scroll to top/bottom     | 
