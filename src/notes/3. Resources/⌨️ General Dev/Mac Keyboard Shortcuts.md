@@ -4,7 +4,7 @@
 > [!INFO]
 > 
 > Tags:  #🕸️/🟦 #🏷️ #📜️
-> References: [[⌨️ General Dev]] [[Keyboard]] 
+> References: [[⌨️ General Dev]] [[Keyboard]] [[Mac]]
 
 
 # Mac Keyboard Shortcuts
