@@ -7,7 +7,7 @@
 <script>
 import Vue from "vue";
 import marked from "marked";
-import hljs from "highlight.js";
+import hljs from "highlight";
 
 marked.setOptions({
   renderer: new marked.Renderer(),
