@@ -8,6 +8,8 @@
 
 # `= this.file.name`
 
+This is my cheatsheet for everything that I think I will need to use while trying to learn Vim. 
+
 ## Modes
 - `Normal` - Navigate default, Press `Esc` or `CTRL + C` to navigate to
 - `Insert` - Typing, Press `i` to navigate to
