@@ -125,6 +125,8 @@ Operators are commands that let you perform actions to change the content of the
 **Changing**
 - `c` - combines `d` and `i` together
 	- delete and go to insert mode
+- `cc` - changes a complete line
+- `C` - changes from the cursor until the end on the line
 
 **Dot Operator**
 - `.` - repeats last change (motion / insert / change / delete)
