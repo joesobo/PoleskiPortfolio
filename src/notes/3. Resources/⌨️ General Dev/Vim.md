@@ -69,3 +69,15 @@ type f(   ==> ^                        ^
 
 - `f{character};` - `;` brings you to the next occurrence of the character
 - `f{character},` - `,` brings you to the previous occurrence of the character
+
+**Moving Horizontally Extremely**
+- `0` - Moves to the first character of a line
+- `^` - Moves to the first non-blank character of a line
+- `$` - Moves to the end of a line
+- `g_` - Moves to the non-blank character at the end of a line
+
+**Moving Vertically**
+- `}` - jumps entire paragraphs downwards
+- `{` - similarly but upwards
+- `CTRL-D` - lets you move down half a page by scrolling the page
+- `CTRL-U` - lets you move up half a page also by scrolling
