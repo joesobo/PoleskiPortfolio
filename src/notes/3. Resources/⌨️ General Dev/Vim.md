@@ -27,14 +27,12 @@ Commands are actions that have an effect in your editor
 #### Motions
 Motions are commands that you use to move in `Normal` mode
 
-
 **Basic:**
  ```
         ↑
   ← h j k l →
       ↓
  ```
-
 
 **Move Horizontal:**
 - `w` - Move word by word
@@ -81,3 +79,34 @@ type f(   ==> ^                        ^
 - `{` - similarly but upwards
 - `CTRL-D` - lets you move down half a page by scrolling the page
 - `CTRL-U` - lets you move up half a page also by scrolling
+
+**Search Pattern**
+- `/{pattern}` - to search forward
+- `?{pattern}` - to search backwards
+- `n` - to go to the next match
+- `N` - to go to the previous match
+
+**Move by Count**
+- `{count}{command}` - modify command by count 
+
+**Semantic Movement**
+- `gd` - **g**o to **d**efinition of whatever is under your cursor.
+- `gf` - **g**o to a **f**ile in an import.
+
+**Core Motions**
+- `gg` - go to the top of the file.
+- `{line}gg` - go to a specific line.
+- `G` - go to the end of the file.
+- `%` - jump to matching `({[]})`.
+
+#### Operators
+Operators are commands that let you perform actions to change the content of the editor 
+
+**Basic Form**
+- `{operator}{count}{motion}`
+- `d2w` - delete 2 words
+
+**Undo / Redo**
+- `u` - undo
+- `Ctrl + r` - redo
+
