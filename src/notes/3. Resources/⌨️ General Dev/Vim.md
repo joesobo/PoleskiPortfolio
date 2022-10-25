@@ -20,6 +20,8 @@ This is my cheatsheet for everything that I think I will need to use while tryin
 - `y` - Copy
 - `p` - Paste
 - `/{term}` - Search
+- `Ctrl + e` - scroll down
+- `Ctrl + y` - scroll up
 
 ## Commands
 Commands are actions that have an effect in your editor
@@ -110,3 +112,19 @@ Operators are commands that let you perform actions to change the content of the
 - `u` - undo
 - `Ctrl + r` - redo
 
+**Mnemonics**
+- `d` - delete 
+- `f` - find
+- `c` - change 
+- `t` - till
+
+**Deleting**
+- `dd` - delete whole line
+- `D` - delete until end of line
+
+**Changing**
+- `c` - combines `d` and `i` together
+	- delete and go to insert mode
+
+**Dot Operator**
+- `.` - repeats last change (motion / insert / change / delete)
