@@ -22,6 +22,12 @@ This is my cheatsheet for everything that I think I will need to use while tryin
 - `/{term}` - Search
 - `Ctrl + e` - scroll down
 - `Ctrl + y` - scroll up
+- `Ctrl + backtick` - switch between terminal and editor
+- `CMD + 1/2` - switch active editors
+- `Ctrl + Shift + Tab` - switch editor tabs
+- `CMD + W` - close tab
+- `Shift + CMD + E` - Explorer tab
+- `Ctrl + Shift + G` - Git tab
 
 ## Commands
 Commands are actions that have an effect in your editor
@@ -126,7 +132,7 @@ Operators are commands that let you perform actions to change the content of the
 - `c` - combines `d` and `i` together
 	- delete and go to insert mode
 - `cc` - changes a complete line
-- `C` - changes from the cursor until the end on the line
+- `C` - luechanges from the cursor until the end on the line
 
 **Dot Operator**
 - `.` - repeats last change (motion / insert / change / delete)
