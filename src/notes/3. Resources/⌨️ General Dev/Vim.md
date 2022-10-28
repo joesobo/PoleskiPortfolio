@@ -18,6 +18,7 @@ This is my cheatsheet for everything that I think I will need to use while tryin
 ## Important Key Combos
 - `hjkl` - Navigate
 - `y` - Copy
+	- `yy` - copy line without going into visual mode
 - `p` - Paste
 - `/{term}` - Search
 
@@ -135,6 +136,7 @@ Operators are commands that let you perform actions to change the content of the
 **Deleting**
 - `dd` - delete whole line
 - `D` - delete until end of line
+- NOTE: deleting moves content into the same buffer as `yank`
 
 **Changing**
 - `c` - combines `d` and `i` together
