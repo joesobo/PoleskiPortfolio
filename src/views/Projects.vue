@@ -25,6 +25,15 @@ interface ProjectClass {
 
 const projects: ProjectClass[] = [
   {
+    title: "CodeGraphy",
+    languages: ["Typescript"],
+    technologies: ["Vue"],
+    description: "VSCode extension for visualizing file connections.",
+    image: require("../assets/CodeGraphy.png"),
+    github: "https://github.com/joesobo/Codegraphy",
+    live: "https://marketplace.visualstudio.com/items?itemName=codegraphy.codegraphy",
+  },
+  {
     title: "This Portfolio",
     languages: ["Typescript"],
     technologies: ["Vue"],
@@ -83,13 +92,13 @@ const projects: ProjectClass[] = [
 
 export default Vue.extend({
   name: "Home",
+  components: {
+    Project,
+  },
   data() {
     return {
       projects,
     };
-  },
-  components: {
-    Project,
   },
 });
 </script>

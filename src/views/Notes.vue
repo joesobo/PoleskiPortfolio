@@ -30,13 +30,22 @@ export default Vue.extend({
   methods: {
     cleanupMarkdown(input) {
       const name = this.notes.split("/");
-      const temp = input
-        .replace("`$= dv.current().file.name`", name[1] ? name[1] : name[0])
+
+      // break the textblock into an array of lines
+      var lines = input.split("\n");
+      // remove one line, starting at the first position
+      lines.splice(0, 6);
+      // join the array back into a single string
+      var newtext = lines.join("\n");
+
+      const temp = newtext
+        .replace("`= this.file.name`", name[1] ? name[1] : name[0])
         .replaceAll("![[", "")
         .replaceAll("[[", "")
         .replaceAll("]]", "")
         .replaceAll("#dv current file name", "")
         .split("--- admonition");
+
       let value = temp[1] ? temp[1] : temp[0];
       if (value.includes("```ccard")) {
         value =
