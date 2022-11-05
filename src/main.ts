@@ -1,13 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library, IconPack  } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import AsyncComputed from "vue-async-computed";
 
-library.add(fas, fab);
+library.add(fas as IconPack, fab as IconPack);
 
 Vue.component("fa", FontAwesomeIcon);
 
