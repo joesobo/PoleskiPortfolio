@@ -13,4 +13,4 @@
 - 65% Keyboard
 - Wireless mouse
 - Wireless headphones connection
-- bluetooth USB reciever
+- bluetooth USB reciever 
