@@ -1,10 +1,6 @@
 
 > [!INFO]
 > 
-> tags:  #🕸️/🟧️   
+> tags:  #🕸️/ 
 > References:   
 > Links: 
-
-
-
-# `= this.file.name`
